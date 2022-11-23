@@ -1,0 +1,30 @@
+Notes on my work.
+
+To run this code, it is required that you have:
+unzip and unrar installed.
+
+This was an attempt at downloading and installing unrar locally if it is not the case:
+rarFileExe = requests.get('https://www.rarlab.com/rar/unrarsrc-6.0.3.tar.gz')
+with open("unrarsrc-6.0.3.tar.gz", "wb") as code:
+    code.write(rarFileExe.content)
+import tarfile 
+# open file
+file = tarfile.open('unrarsrc-6.0.3.tar.gz') 
+# extracting file
+file.extractall('.')
+file.close()
+
+References:
+https://towardsdatascience.com/how-to-cluster-in-high-dimensions-4ef693bacc6
+https://github.com/NikolayOskolkov/ClusteringHighDimensions/blob/master/easy_scrnaseq_tsne_cluster.R
+
+The datasets:
+Pendigits is the smallest, with only 1797 samples, and is only 64 dimensional: 8x8 images of digits.
+
+MNIST provides a good basic scaling test with 70,000 samples of handwritten digits in 784 dimensions.
+
+COIL-20 was collected by the Center for Research on Intelligent Systems at the Department of Computer Science, Columbia University. The database contains grayscale images of 20 objects. The objects were placed on a motorized turntable against a black background and images were taken at pose internals of 5 degrees. So, 72 images of the same object from different angles for each class.
+
+The USPS dataset refers to numeric data obtained from the scanning of handwritten digits from envelopes by the U.S. Postal Service. The original scanned digits are binary and of different sizes and orientations; the images here have been deslanted and size normalized, resulting in 16 x 16 grayscale images (Le Cun et al., 1990). Almost 10,000 samples and 256 dimensions.
+
+Buildings are images of  41 buildings under rotatins. A total of 4178 images.
