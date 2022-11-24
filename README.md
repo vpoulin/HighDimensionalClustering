@@ -1,4 +1,4 @@
-High Dimemsional Clustering
+High Dimensional Clustering
 ==============================
 _Author: vpoulin_
 
