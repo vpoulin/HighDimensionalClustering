@@ -1,0 +1,11 @@
+default_context:
+  author_name: vpoulin
+  conda_path: ~/anaconda3/bin/conda
+  default_branch: master
+  description: Explore solutions to high dimensional clustering
+  module_name: src
+  open_source_license: MIT
+  project_name: High Dimensional Clustering
+  python_version: '3.7'
+  repo_name: HighDimensionalClustering
+  upstream_location: github.com

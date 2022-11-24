@@ -1,0 +1,48 @@
+name: HighDimensionalClustering
+channels:
+  - defaults
+dependencies:
+  - pip
+  - pip:
+    - -e .
+    - python-dotenv>=0.5.1
+    - nbval
+    - nbdime
+    - gdown
+    - igraph
+    - partition-igraph
+    - cdlib
+    - leidenalg
+    - pynndescent
+  - networkx
+  - setuptools
+  - wheel
+  - git>=2.5
+  - sphinx
+  - bokeh
+  - chardet
+  - click
+  - colorcet
+  - coverage
+  - coveralls
+  - datashader
+  - holoviews
+  - matplotlib
+  - jupyter
+  - jupyterlab
+  - scikit-image
+  - scikit-learn
+  - scipy
+  - seaborn
+  - joblib
+  - nb_conda_kernels
+  - pandas
+  - requests
+  - pathlib
+  - fsspec
+  - python=3.7
+  - psutil
+  - cairo
+  - pycairo
+  - conda-forge::umap-learn
+  - conda-forge::hdbscan

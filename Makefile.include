@@ -1,0 +1,23 @@
+CONDA_EXE ?= ~/anaconda3/bin/conda
+PYTHON_INTERPRETER ?= python
+DEBUG_FILE := debug.txt
+MODULE_NAME := src
+TESTS_NO_CI = $(MODULE_NAME)/tests/no_ci
+PROJECT_DIR := $(dir $(realpath $(lastword $(MAKEFILE_LIST))))
+PROJECT_NAME := HighDimensionalClustering
+VIRTUALENV := conda
+PLATFORM := $(shell $(PYTHON_INTERPRETER) -c "import platform; print(platform.platform())")
+LOCKFILE := environment.$(PLATFORM).lock.yml
+INSTALL_DEPS = conda make git
+
+ARCH = $(shell $(PYTHON_INTERPRETER) -c "import sys; print(sys.platform)")
+-include Makefile.$(ARCH)
+ECHO ?= echo
+RM ?= rm
+RMTREE ?= rm -rf
+CAT ?= cat
+SET ?= export
+WHICH ?= which
+DEVNULL ?= /dev/null
+
+$(warning From here on, using SHELL = $(SHELL))
