@@ -106,7 +106,7 @@ We recommend you remove conda-forge (and all other non-default channels) from yo
   - wheel                    # install from the default (anaconda) channel
   - pytorch::pytorch         # install this from the `pytorch` channel
   - conda-forge::tokenizers  # install this from conda-forge
-
+```
 
 ### Initial setup
 
