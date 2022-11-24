@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 #
-# High Dimemsional Clustering documentation build configuration file, created by
+# High Dimensional Clustering documentation build configuration file, created by
 # sphinx-quickstart.
 #
 # This file is execfile()d with the current directory set to its containing dir.
@@ -41,7 +41,7 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'High Dimemsional Clustering'
+project = u'High Dimensional Clustering'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -185,7 +185,7 @@ latex_elements = {
 latex_documents = [
     ('index',
      'HighDimensionalClustering.tex',
-     u'High Dimemsional Clustering Documentation',
+     u'High Dimensional Clustering Documentation',
      u"vpoulin", 'manual'),
 ]
 
@@ -215,7 +215,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    ('index', 'HighDimensionalClustering', u'High Dimemsional Clustering Documentation',
+    ('index', 'HighDimensionalClustering', u'High Dimensional Clustering Documentation',
      [u"vpoulin"], 1)
 ]
 
@@ -229,8 +229,8 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-    ('index', 'HighDimensionalClustering', u'High Dimemsional Clustering Documentation',
-     u"vpoulin", 'High Dimemsional Clustering',
+    ('index', 'HighDimensionalClustering', u'High Dimensional Clustering Documentation',
+     u"vpoulin", 'High Dimensional Clustering',
      'Explore solutions to high dimensional clustering', 'Miscellaneous'),
 ]
 
