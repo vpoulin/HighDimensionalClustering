@@ -21,3 +21,23 @@ class TestImports(unittest.TestCase):
         import bokeh
         import matplotlib
         import sklearn
+
+    def test_packages(self):
+        from IPython.display import display, Markdown, Latex
+        from PIL import Image
+        from community import community_louvain, modularity
+        from partition_igraph import community_ecg as ecg
+        import cdlib.algorithms as cd
+        import hdbscan
+        import igraph
+        import imageio
+        import imageio.v2
+        import leidenalg
+        import networkx
+        import pynndescent
+        import scipy
+        import seaborn
+        import umap
+        import umap.plot
+        import zipfile
+        import re
