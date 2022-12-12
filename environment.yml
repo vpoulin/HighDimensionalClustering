@@ -46,3 +46,4 @@ dependencies:
   - pycairo
   - conda-forge::umap-learn
   - conda-forge::hdbscan
+  - conda-forge::rarfile
