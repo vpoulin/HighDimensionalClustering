@@ -2,19 +2,23 @@ import numpy as np
 import pandas as pd
 from sklearn import cluster
 
-data_set_list = ['pendigits', 'coil', 'mnist', 'usps', 'buildings', 'clusterable']
+data_set_list = ['pendigits', 'coil', 'mnist', 'usps', 'buildings']
+#data_set_list = ['pendigits', 'coil', 'mnist', 'usps', 'buildings', 'clusterable']
 
 def get_dataset_name(dataset_id):
     return(data_set_list[dataset_id])
 
-def read_pendigits(data_folder = '../data'):
+def read_pendigits(data_folder = '../data', images=False):
     from sklearn.datasets import load_digits
     digits = load_digits()
     raw_data = np.asarray(digits.data.astype(np.float32))
     labels = np.asarray(digits.target) 
-    return(raw_data, labels)
+    if(images):
+        return(raw_data, labels, [16-x for x in digits['images']])
+    else:
+        return(raw_data, labels)
 
-def read_coil(data_folder = '../data'):
+def read_coil(data_folder = '../data', images=False):
     import re
     import zipfile
     import imageio.v2 as imageio
@@ -25,43 +29,70 @@ def read_coil(data_folder = '../data'):
     images_zip.extractall(data_folder + '/.')
     
     coil_feature_vectors = []
+    image_files = []
     for filename in filelist:
         im = imageio.imread(data_folder + '/' + filename)
         coil_feature_vectors.append(im.flatten())
+        image_files.append(im)
     coil_20_data = np.asarray(coil_feature_vectors)
     coil_20_target = pd.Series(filelist).str.extract("obj([0-9]+)", expand=False).values.astype(np.int32)
     
     raw_coil = coil_20_data.astype(np.float32)
-    return(raw_coil, coil_20_target)
+    if(images):
+        return(raw_coil, coil_20_target, image_files)
+    else:
+        return(raw_coil, coil_20_target)
 
-def read_mnist(data_folder = '../data'):
+def read_mnist(data_folder = '../data', images=False):
     from sklearn.datasets import fetch_openml
     mnist = fetch_openml("MNIST_784")
     raw_mnist = np.asarray(mnist.data.astype(np.float32))
     targets = np.array(mnist.target.astype('int'))
-    return(raw_mnist[:35000], targets[:35000])
+    if(images):
+        return(raw_mnist[:35000], targets[:35000], 
+               [256-np.resize(x, (28,28)) for x in raw_mnist[:35000]])
+    else:
+        return(raw_mnist[:35000], targets[:35000])
 
-def read_usps(data_folder = '../data'):
+def read_usps(data_folder = '../data', images=False):
     from sklearn.datasets import fetch_openml
     usps = fetch_openml("USPS", version=2)
     raw_usps = np.asarray(usps.data.astype(np.float32))
     targets = np.array(usps.target.astype('int'))
-    return(raw_usps, targets)
+    if(images):
+        return(raw_usps, targets, [-1*np.resize(x, (16,16)) for x in np.array(usps['data'])])
+    else:
+        return(raw_usps, targets)
 
-def read_buildings(data_folder = '../data'):
+def read_buildings(data_folder = '../data', images=False):
     from glob import glob
     from PIL import Image
     buildings_data = []
     buildings_target = []
+    buildings_images = []
     for i in range(1, 41):
         directory = f"{data_folder}/sheffield_buildings/Dataset/{i}"
-        images = np.vstack([np.asarray(Image.open(filename).resize((96, 96))).flatten() for filename in glob(f"{directory}/*")])
+        buildings_images_tmp = []
+        images_tmp = []
+        for filename in glob(f"{directory}/*"):
+            temp =Image.open(filename)
+            keep = temp.copy()
+            buildings_images_tmp.append(keep)
+            images_tmp.append(np.asarray(keep.resize((96, 96))).flatten())
+            temp.close()
+        images_ = np.vstack(images_tmp)
+        # buildings_images_tmp = [Image.open(filename) for filename in glob(f"{directory}/*")]
+        # images_ = np.vstack([np.asarray(Image.open(filename).resize((96, 96))).flatten() for filename in glob(f"{directory}/*")])
         labels = np.full(len(glob(f"{directory}/*")), i, dtype=np.int32)
-        buildings_data.append(images)
+        buildings_data.append(images_)
         buildings_target.append(labels)
+        buildings_images = buildings_images + buildings_images_tmp
     buildings_data = np.vstack(buildings_data)
     buildings_target = np.hstack(buildings_target)
-    return(buildings_data, buildings_target)
+    if(images):
+        return(buildings_data, buildings_target, buildings_images)
+    else:
+        return(buildings_data, buildings_target)
 
 def read_clusterable_data(data_folder = '../data'):
     import hdbscan
@@ -85,40 +116,52 @@ def map_id_name(dataset_id=-1, dataset_name=None):
         dataset_id = data_set_list.index(dataset_name)
     return(dataset_id, dataset_name)
 
-def read(dataset_id, data_folder = '../data'):
+def read(dataset_id, data_folder = '../data', return_images=False):
     if(dataset_id == 0):
-        raw_data, labels = read_pendigits(data_folder)
+        res = read_pendigits(data_folder=data_folder, images=return_images)
 
     if(dataset_id==1):
-        raw_data, labels = read_coil(data_folder)
+        res = read_coil(data_folder=data_folder, images=return_images)
 
     if(dataset_id==2):
-        raw_data, labels = read_mnist(data_folder)
+        res = read_mnist(data_folder=data_folder, images=return_images)
 
     if(dataset_id==3):
-        raw_data, labels = read_usps(data_folder)
+        res = read_usps(data_folder=data_folder, images=return_images)
 
     if(dataset_id==4):
-        raw_data, labels = read_buildings(data_folder)
+        res = read_buildings(data_folder=data_folder, images=return_images)
         
     if(dataset_id==5):
-        raw_data, labels = read_clusterable_data(data_folder)
+        return_images=False
+        res = read_clusterable_data(data_folder)
         
-    return(raw_data, labels)
-
-def get_dataset(dataset_id=-1, dataset_name=None, top_n=None, data_folder = '../data'):
-    dataset_id, dataset_name = map_id_name(dataset_id, dataset_name)      
-    raw_data, labels = read(dataset_id, data_folder)
+    raw_data = res[0]
+    labels = res[1]
+    if(return_images):
+        images = res[2]
+        return(raw_data, labels, images)
+    else:
+        return(raw_data, labels)
     
+
+def get_dataset(dataset_id=-1, dataset_name=None, top_n=None, data_folder = '../data', return_images=False):
+    dataset_id, dataset_name = map_id_name(dataset_id, dataset_name)      
+    res = read(dataset_id, data_folder=data_folder, return_images=return_images)
+    raw_data = res[0]
+    labels = res[1]
     if(raw_data.shape[0] != len(labels)): 
         raise ValueError(f'data and labels of different lengths {raw_data.shape[0]} and {len(labels)}')
     if(top_n is not None and top_n < len(labels)):
         raw_data = raw_data[:top_n]
         labels = labels[:top_n]
-    return(raw_data, labels, dataset_name)
+    if(return_images):
+        images = res[2]
+        return(raw_data, labels, dataset_name, images)
+    else:
+        return(raw_data, labels, dataset_name)
 
-
-
+    
 # The goal of this function is to store the default parameters for every dataset (as we are calling this frequently)
 # Could set set_op_mix_ratio=0.0 to get a pure fuzzy intersection - similar to the exploration of bi-directional edges in graphs
 # graph_type is 'nx' or 'ig' to designate Networkx or iGraph respectively.
@@ -137,6 +180,31 @@ dataset_params ={
        'min_dist':0.33, 'random_state':0, 'n_epochs':100, 'n_components':2},
 }
 
+dataset_clustering_params = {'None':
+                             {
+    0:{'hdbscan_min_samples':5, 'hdbscan_min_cluster_size':100, 'sl_k':160, 'dbscan_eps':20.0},
+    1:{'hdbscan_min_samples':3, 'hdbscan_min_cluster_size':20, 'sl_k':80, 'dbscan_eps':5000.0},
+    2:{'hdbscan_min_samples':10, 'hdbscan_min_cluster_size':100, 'sl_k':80, 'dbscan_eps':1000.0},
+    3:{'hdbscan_min_samples':10, 'hdbscan_min_cluster_size':100, 'sl_k':80, 'dbscan_eps':3.5},
+    4:{'hdbscan_min_samples':3, 'hdbscan_min_cluster_size':20, 'sl_k':120, 'dbscan_eps':6000.0},
+},
+                             'PCA':
+                             {
+    0:{'hdbscan_min_samples':5, 'hdbscan_min_cluster_size':100, 'sl_k':160, 'dbscan_eps':15.0, 'pca_n_components':16},
+    1:{'hdbscan_min_samples':3, 'hdbscan_min_cluster_size':20, 'sl_k':80, 'dbscan_eps':4000.0, 'pca_n_components':64},
+    2:{'hdbscan_min_samples':10, 'hdbscan_min_cluster_size':100, 'sl_k':80, 'dbscan_eps':600.0, 'pca_n_components':32},
+    3:{'hdbscan_min_samples':10, 'hdbscan_min_cluster_size':100, 'sl_k':80, 'dbscan_eps':2.0, 'pca_n_components':32},
+    4:{'hdbscan_min_samples':3, 'hdbscan_min_cluster_size':20, 'sl_k':120, 'dbscan_eps':2000.0, 'pca_n_components':32},
+},
+                             'UMAP':
+                             {
+    0:{'hdbscan_min_samples':5, 'hdbscan_min_cluster_size':100, 'sl_k':20, 'dbscan_eps':0.5},
+    1:{'hdbscan_min_samples':3, 'hdbscan_min_cluster_size':20, 'sl_k':80, 'dbscan_eps':0.3},
+    2:{'hdbscan_min_samples':10, 'hdbscan_min_cluster_size':100, 'sl_k':80, 'dbscan_eps':0.1},
+    3:{'hdbscan_min_samples':10, 'hdbscan_min_cluster_size':100, 'sl_k':80, 'dbscan_eps':0.15},
+    4:{'hdbscan_min_samples':3, 'hdbscan_min_cluster_size':20, 'sl_k':120, 'dbscan_eps':0.25},
+}}
+
 def get_dataset_params(dataset_id, param=None):
     if(param is not None):
         res = dataset_params[dataset_id][param]
@@ -144,7 +212,7 @@ def get_dataset_params(dataset_id, param=None):
         res = dataset_params[dataset_id]
     return(res)
 
-def get_umap_graph(raw_data=None, dataset_id=-1, dataset_name=None, return_all=False, set_op_mix_ratio=1.0, graph_type='ig', data_folder = '../data', params=None):
+def get_umap_graph(raw_data=None, dataset_id=-1, dataset_name=None, return_all=False, return_only_matrix=False, set_op_mix_ratio=1.0, graph_type='ig', data_folder = '../data', params=None):
     import umap
     dataset_id, dataset_name = map_id_name(dataset_id, dataset_name)
     if(raw_data is None):
@@ -161,6 +229,8 @@ def get_umap_graph(raw_data=None, dataset_id=-1, dataset_name=None, return_all=F
                                                      metric='euclidean', 
                                                      return_dists=True,
                                                     set_op_mix_ratio=set_op_mix_ratio)
+    if(return_only_matrix):
+        return(A, sigmas, rhos, dists)
     if(graph_type=='nx'):
         G = nx.from_scipy_sparse_matrix(A, edge_attribute='weight')
     else:
