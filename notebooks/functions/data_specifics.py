@@ -1,14 +1,15 @@
 import numpy as np
 import pandas as pd
 from sklearn import cluster
+from src import paths
 
-data_set_list = ['pendigits', 'coil', 'mnist', 'usps', 'buildings']
-#data_set_list = ['pendigits', 'coil', 'mnist', 'usps', 'buildings', 'clusterable']
+data_folder = paths['data_path']
+data_set_list = ['pendigits', 'coil', 'mnist', 'usps', 'buildings', 'clusterable']
 
 def get_dataset_name(dataset_id):
     return(data_set_list[dataset_id])
 
-def read_pendigits(data_folder = '../data', images=False):
+def read_pendigits(data_folder = data_folder, images=False):
     from sklearn.datasets import load_digits
     digits = load_digits()
     raw_data = np.asarray(digits.data.astype(np.float32))
@@ -18,20 +19,27 @@ def read_pendigits(data_folder = '../data', images=False):
     else:
         return(raw_data, labels)
 
-def read_coil(data_folder = '../data', images=False):
+def read_coil(data_folder = data_folder, images=False):
     import re
     import zipfile
     import imageio.v2 as imageio
-    images_zip = zipfile.ZipFile(f'{data_folder}/coil20.zip')
+    import os
+    
+    if not os.path.isfile(data_folder / 'coil20.zip'):
+        results = requests.get('http://www.cs.columbia.edu/CAVE/databases/SLAM_coil-20_coil-100/coil-20/coil-20-proc.zip')
+        with open(data_folder / 'coil20.zip', "wb") as code:
+            code.write(results.content)
+        
+    images_zip = zipfile.ZipFile(data_folder / f'coil20.zip')
     mylist = images_zip.namelist()
     r = re.compile(".*\.png$")
     filelist = list(filter(r.match, mylist))
-    images_zip.extractall(data_folder + '/.')
+    images_zip.extractall(data_folder / '.')
     
     coil_feature_vectors = []
     image_files = []
     for filename in filelist:
-        im = imageio.imread(data_folder + '/' + filename)
+        im = imageio.imread(data_folder / filename)
         coil_feature_vectors.append(im.flatten())
         image_files.append(im)
     coil_20_data = np.asarray(coil_feature_vectors)
@@ -43,7 +51,7 @@ def read_coil(data_folder = '../data', images=False):
     else:
         return(raw_coil, coil_20_target)
 
-def read_mnist(data_folder = '../data', images=False):
+def read_mnist(data_folder = data_folder, images=False):
     from sklearn.datasets import fetch_openml
     mnist = fetch_openml("MNIST_784")
     raw_mnist = np.asarray(mnist.data.astype(np.float32))
@@ -54,7 +62,7 @@ def read_mnist(data_folder = '../data', images=False):
     else:
         return(raw_mnist[:35000], targets[:35000])
 
-def read_usps(data_folder = '../data', images=False):
+def read_usps(data_folder = data_folder, images=False):
     from sklearn.datasets import fetch_openml
     usps = fetch_openml("USPS", version=2)
     raw_usps = np.asarray(usps.data.astype(np.float32))
@@ -64,14 +72,27 @@ def read_usps(data_folder = '../data', images=False):
     else:
         return(raw_usps, targets)
 
-def read_buildings(data_folder = '../data', images=False):
+def read_buildings(data_folder = data_folder, images=False):
     from glob import glob
     from PIL import Image
+    import os
+    
+    if not os.path.isfile(data_folder / 'buildings.rar'):
+        import requests
+        results = requests.get('http://eprints.lincoln.ac.uk/id/eprint/16079/1/dataset.rar')
+        with open(data_folder / 'buildings.rar', "wb") as code:
+            code.write(results.content)
+            
+    if not os.path.isfile(data_folder / 'sheffield_buildings/Dataset/Dataset/1/S1-01.jpeg'):
+        import rarfile
+        rf = rarfile.RarFile(f'{data_folder}/buildings.rar')
+        rf.extractall(f'{data_folder}/sheffield_buildings')
+            
     buildings_data = []
     buildings_target = []
     buildings_images = []
     for i in range(1, 41):
-        directory = f"{data_folder}/sheffield_buildings/Dataset/{i}"
+        directory = data_folder / f"sheffield_buildings/Dataset/Dataset/{i}"
         buildings_images_tmp = []
         images_tmp = []
         for filename in glob(f"{directory}/*"):
@@ -94,12 +115,21 @@ def read_buildings(data_folder = '../data', images=False):
     else:
         return(buildings_data, buildings_target)
 
-def read_clusterable_data(data_folder = '../data'):
+def read_clusterable_data(data_folder = data_folder, images=False):
     import hdbscan
-     # data obtained from https://github.com/scikit-learn-contrib/hdbscan/blob/master/notebooks/clusterable_data.npy
-    data= np.load(f'{data_folder}/clusterable_data.npy')
+    import os
+    
+    if not os.path.isfile(data_folder / 'clusterable_data.npy'):
+        import urllib.request
+        git_repo_url = 'https://github.com/scikit-learn-contrib/hdbscan/blob/master/notebooks/clusterable_data.npy?raw=true'
+        urllib.request.urlretrieve(git_repo_url, filename=f"{data_folder}/clusterable_data.npy")
+
+    data= np.load(data_folder / 'clusterable_data.npy')
     target = hdbscan.HDBSCAN(min_cluster_size=15).fit_predict(data)
-    return(data, target)
+    if(images):
+        return(data, target, None)
+    else:
+        return(data, target)
 
 def map_id_name(dataset_id=-1, dataset_name=None):
     n = len(data_set_list)
@@ -116,7 +146,7 @@ def map_id_name(dataset_id=-1, dataset_name=None):
         dataset_id = data_set_list.index(dataset_name)
     return(dataset_id, dataset_name)
 
-def read(dataset_id, data_folder = '../data', return_images=False):
+def read(dataset_id, data_folder = data_folder, return_images=False):
     if(dataset_id == 0):
         res = read_pendigits(data_folder=data_folder, images=return_images)
 
@@ -133,8 +163,7 @@ def read(dataset_id, data_folder = '../data', return_images=False):
         res = read_buildings(data_folder=data_folder, images=return_images)
         
     if(dataset_id==5):
-        return_images=False
-        res = read_clusterable_data(data_folder)
+        res = read_clusterable_data(data_folder, images=return_images)
         
     raw_data = res[0]
     labels = res[1]
@@ -145,7 +174,7 @@ def read(dataset_id, data_folder = '../data', return_images=False):
         return(raw_data, labels)
     
 
-def get_dataset(dataset_id=-1, dataset_name=None, top_n=None, data_folder = '../data', return_images=False):
+def get_dataset(dataset_id=-1, dataset_name=None, top_n=None, data_folder = data_folder, return_images=False):
     dataset_id, dataset_name = map_id_name(dataset_id, dataset_name)      
     res = read(dataset_id, data_folder=data_folder, return_images=return_images)
     raw_data = res[0]
@@ -212,7 +241,7 @@ def get_dataset_params(dataset_id, param=None):
         res = dataset_params[dataset_id]
     return(res)
 
-def get_umap_graph(raw_data=None, dataset_id=-1, dataset_name=None, return_all=False, return_only_matrix=False, set_op_mix_ratio=1.0, graph_type='ig', data_folder = '../data', params=None):
+def get_umap_graph(raw_data=None, dataset_id=-1, dataset_name=None, return_all=False, return_only_matrix=False, set_op_mix_ratio=1.0, graph_type='ig', data_folder = data_folder, params=None):
     import umap
     dataset_id, dataset_name = map_id_name(dataset_id, dataset_name)
     if(raw_data is None):
@@ -243,7 +272,7 @@ def get_umap_graph(raw_data=None, dataset_id=-1, dataset_name=None, return_all=F
         return(G)
     
 # The goal of this function is to store the default parameters for every dataset (as we are calling this frequently)    
-def get_umap_vectors(dataset_id=-1, dataset_name=None, raw_data=None, data_folder = '../data', n_components=None, return_vectors=True, params=None):
+def get_umap_vectors(dataset_id=-1, dataset_name=None, raw_data=None, data_folder = data_folder, n_components=None, return_vectors=True, params=None):
     import umap
     dataset_id, dataset_name = map_id_name(dataset_id, dataset_name)
     if(raw_data is None):
