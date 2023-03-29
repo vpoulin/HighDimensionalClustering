@@ -4,7 +4,7 @@ import scipy
 
 # Produce the directed knn graph.
 # Uses umap functions - so knn may be approximate
-def knn_digraph(X, k, graph_type='ig'):
+def knn_adjacency(X, k):
     import umap
     knn_indices, knn_dists, _ = umap.umap_.nearest_neighbors(
         X, n_neighbors=k, metric='euclidean', metric_kwds={},
@@ -27,6 +27,13 @@ def knn_digraph(X, k, graph_type='ig'):
             (vals, (rows, cols)), shape=(X.shape[0], X.shape[0])
         )
     A.eliminate_zeros()
+
+    return(A)
+
+def knn_digraph(X, k, graph_type='ig'):
+    import umap
+    A = knn_adjacency(X, k)
+    
     if(graph_type=='nx'):
         G = nx.from_scipy_sparse_matrix(A, edge_attribute='weight')
         bi_dir =  {(u,v):True for (u,v) in G.edges() if ((v,u) in G.edges())}
