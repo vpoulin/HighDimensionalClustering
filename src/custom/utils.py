@@ -1,6 +1,7 @@
 import umap
 import igraph as ig
 import numpy as np
+import scipy
 
 def get_graph_UX(X,
                  n_neighbors,
@@ -66,3 +67,23 @@ def adjacency_to_distance_matrix(M, inf_size=1000, noise_factor=0.1):
     N[N < noise_factor] = inf_size
     N = N +  ((np.random.rand(N.shape[0], N.shape[1]) *noise_factor) - (noise_factor/2))
     return N
+
+def randomly_remove_edges(M, proportion, kind="undirected"):
+    '''
+    Given an adjacency matrix M, keep only a given portion of entries. If undirected, assume input and output matrix is symmetric.
+    '''
+    if kind=="directed":
+        entries = [(i, j) for i, j in zip(*scipy.sparse.csr_matrix(M).nonzero())]
+    elif kind=="undirected":
+        entries = [(i, j) for i, j in zip(*scipy.sparse.csr_matrix(M).nonzero()) if i < j]
+    else:
+        raise ValueError(f"{kind} must be one of 'directed' or 'undirected'")
+    choices = np.random.choice(np.arange(len(entries)), size=int(proportion*len(entries)), replace=False)
+    row_ind, col_ind = list(zip(*[entries[x] for x in choices]))
+    if kind=="directed":
+        data = np.ones(len(choices))
+        mat = scipy.sparse.csr_matrix((data, (list(row_ind), list(col_ind))), shape=M.shape)
+    elif kind=="undirected":
+        data = np.ones(len(choices)*2)
+        mat = scipy.sparse.csr_matrix((data, (list(row_ind)+list(col_ind), list(col_ind)+list(row_ind))), shape=M.shape)
+    return mat
