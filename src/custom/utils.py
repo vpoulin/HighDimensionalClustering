@@ -54,7 +54,7 @@ def get_VX_from_UX(UX, set_op_mix_ratio=1.0):
     return G
 
 
-def adjacency_to_distance_matrix(M, inf_size=1000, noise_factor=0.1):
+def adjacency_to_distance_matrix(M, inf_size=1000, noise_factor=0.1, random_seed=42):
     """
     Take an adjacency matrix and turn it into a distance matrix where there is distance 1 when there is an edge and otherwise distance is inf_size. 
     Also perturbs the distances with a random noise factor to simulate randomly breaking the tiebreak for equidistant points.
@@ -63,22 +63,24 @@ def adjacency_to_distance_matrix(M, inf_size=1000, noise_factor=0.1):
     
     Note: This assumes that the adjacency matrix is a binary matrix.
     """
+    rng = np.random.default_rng(random_seed)
     N = M.copy()
     N[N < noise_factor] = inf_size
-    N = N +  ((np.random.rand(N.shape[0], N.shape[1]) *noise_factor) - (noise_factor/2))
+    N = N +  ((rng.random((N.shape[0], N.shape[1])) *noise_factor) - (noise_factor/2))
     return N
 
-def randomly_remove_edges(M, proportion, kind="undirected"):
+def randomly_remove_edges(M, proportion, kind="undirected", random_seed=42):
     '''
     Given an adjacency matrix M, keep only a given portion of entries. If undirected, assume input and output matrix is symmetric.
     '''
+    rng = np.random.default_rng(random_seed)
     if kind=="directed":
         entries = [(i, j) for i, j in zip(*scipy.sparse.csr_matrix(M).nonzero())]
     elif kind=="undirected":
         entries = [(i, j) for i, j in zip(*scipy.sparse.csr_matrix(M).nonzero()) if i < j]
     else:
         raise ValueError(f"{kind} must be one of 'directed' or 'undirected'")
-    choices = np.random.choice(np.arange(len(entries)), size=int(proportion*len(entries)), replace=False)
+    choices = rng.choice(np.arange(len(entries)), size=int(proportion*len(entries)), replace=False)
     row_ind, col_ind = list(zip(*[entries[x] for x in choices]))
     if kind=="directed":
         data = np.ones(len(choices))
