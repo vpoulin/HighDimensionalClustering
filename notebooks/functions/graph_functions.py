@@ -35,11 +35,13 @@ def knn_digraph(X, k, graph_type='ig'):
     A = knn_adjacency(X, k)
     
     if(graph_type=='nx'):
+        import networkx as nx
         G = nx.from_scipy_sparse_matrix(A, edge_attribute='weight')
         bi_dir =  {(u,v):True for (u,v) in G.edges() if ((v,u) in G.edges())}
         nx.set_edge_attributes(G, False, 'bi_directional')
         nx.set_edge_attributes(G, bi_dir, 'bi_directional') 
     else:
+        import igraph as ig
         G = ig.Graph.Weighted_Adjacency(A)
         for e in G.es:
             e["bi_directional"] = G.are_connected(e.target, e.source)
