@@ -7,7 +7,7 @@ include Makefile.include
 $(LOCKFILE): check_installation .make.bootstrap .make.pip-requirements.txt .make.environment-default.yml .make.conda-forge-requirements.txt
 ifeq (conda, $(VIRTUALENV))
 	$(CONDA_EXE) env update -n $(PROJECT_NAME) -f .make.environment-default.yml --prune
-	$(CONDA_EXE) install -n $(PROJECT_NAME) --file .make.conda-forge-requirements.txt --channel defaults --channel conda-forge --strict-channel-priority --yes
+	$(CONDA_EXE) install -n $(PROJECT_NAME) --file .make.conda-forge-requirements.txt --channel defaults --channel conda-forge 
 	$(CONDA_EXE) run -n $(PROJECT_NAME) --no-capture pip install -r .make.pip-requirements.txt
 	$(CONDA_EXE) env export -n $(PROJECT_NAME) -f $(LOCKFILE)
 else
