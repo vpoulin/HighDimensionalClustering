@@ -21,7 +21,7 @@ The datasets:
 * The USPS dataset refers to numeric data obtained from the scanning of handwritten digits from envelopes by the U.S. Postal Service. The original scanned digits are binary and of different sizes and orientations; the images here have been deslanted and size normalized, resulting in 16 x 16 grayscale images (Le Cun et al., 1990). Almost 10,000 samples and 256 dimensions.
 * Buildings are images of  41 buildings under rotatins. A total of 4178 images.
 
-## [Notebook 02](notebooks/archive/02-GraphClustering_on_UMAP_graph.ipynb) : High dimensional clustering via graph clustering
+## [Notebook 02](02-GraphClustering_on_UMAP_graph.ipynb) : High dimensional clustering via graph clustering
 
 The goal of this notebook is to compare different graph clustering algorithms on the UMAP graphs (fuzzy intersection, fuzzy union, with and without edge weights). Fuzzy intersection limits the k-NN graph to bi-directional edges whereas the fuzzy union considers the directed graph yield by k-NN graph as undirected. The weights used are the UMAP weights.
 
@@ -30,11 +30,11 @@ Results show that Leiden and Louvain are the two clustering techniques that perf
 
 We have also tested if the difference in performance between graph clustering algorithms and HDBSCAN could come from the fact that HDBSCAN has a "noise" category, which reduces the data set size used for evaluating the technique. Removing noise, either from evaluation or from the dataset, does improve the performance of all algorithms, but it does not change the how the algorithms compare to one another.
 
-## [Notebook 03](notebooks/archive/03-UMAP_graph_study.ipynb) : Characterizing edges
+## [Notebook 03](03-UMAP_graph_study.ipynb) : Characterizing edges
 
 The goal of this notebook is to characterize edges of the UMAP graph with respect with their position (internal/external) in the groundtruth partition. It is also to see if the edges misclassified by Leiden/HDBSCAN partitions have particularities. The edge features studied include their endpoints' rho and sigma values, the number of supporting triangles, etc.
 
-## [Notebook 06](notebooks/archive/06-KNN_graph_study.ipynb) : k-NN graph : Ranks of edges
+## [Notebook 06](06-KNN_graph_study.ipynb) : k-NN graph : Ranks of edges
 
 The k-NN graphs we get from low dimensional vs. high dimensional data representation differ. Here we look at how much they differ. To measure the similarity between a point's neiborhood before and after dimensionality reduction (UMAP), we use the truncated-Kendall Tau and the Jaccard similarity. We use a different neighborhood size for each dataset: we use the $k$ value that was used in the initial clustering experiment (yielding good UMAP+HDBSCAN partition).
 
@@ -43,7 +43,7 @@ The distributions of the neighborhood similarities over the set of vertices of t
 Would the ranks of the edges incident to a vertex - ranks in terms of different measures (high dim distance, low dim distance and UMAP weight) - be indicative of the status (internal/external) of the edge in the ground-truth clustering?
 The high dimensional distance ranks and the UMAP weights ranks are both indicative of the edge status proportions in the ground truth partition. However, the low dimensional distance ranks are a lot more indicative.
 
-## [Notebook 04](notebooks/archive/04-cliques_preservation.ipynb) : Higher dimensional simplices preservation
+## [Notebook 04](04-cliques_preservation.ipynb) : Higher dimensional simplices preservation
 
 Here, we explore how the higher dimensional simplices are preserved within parts of a partition. We compare the number of simplices preserved in the ground truth partition with the number preserved via Leiden.
 
@@ -51,19 +51,19 @@ Surprisingly, although Leiden generally yields a larger partition size - so a fi
 
 Moreover, the Leiden partition (obtained on the kNN in high dimension) also preserves more of the low-dimensional simplices than the ground-truth partition does.
 
-## [Notebook 05](notebooks/archive/05-weighted_clique_preservation.ipynb) : Higher dimensional simplices : with weights?
+## [Notebook 05](05-weighted_clique_preservation.ipynb) : Higher dimensional simplices : with weights?
 
 Here we look at the minimum umap weights of the simplices. We want to see if simplices that are internal to ground truth parts have higher minimum weights than simplices that are external (split by ground truth partition).
 
 Edges that are part of internal simplices (internal w.r.t. the ground truth partition) have higher minimal UMAP weights. However, the distributions of internal vs. external simplex weights are not easily separable: both are skewed towards small values.
 
-## [Notebook 07](notebooks/archive/07-HDBSCAN_on_UMAP_graph.ipynb) : Running HDBSCAN on partial distance matrices?
+## [Notebook 07](07-HDBSCAN_on_UMAP_graph.ipynb) : Running HDBSCAN on partial distance matrices?
 
 Here, trying to be lazy and get as much as we can out of HDBSCAN without understanding how it behaves on sparse matrices really. What can we get from HDBSCAN on a sparse distance matrix having non-zero entries only between high dimensional k-NN data pairs?
 * First we cheat: the distance values are the low dimensional distances (after dimension reduction with UMAP). If we use a small number of NNs (same as for the UMAP projection say), running HDBSCAN on the sparse matrix does not provide good clusters. The larger the number of NNs - the larger the number of non-zero values - the closer we get to HDBSCAN result on UMAP reduction. I am still surprised that by *cheating* a lot and providing a kNN graph (with large k value) of the low dim distances, we do not get similar results as HDBSCAN on the low dim points.
 * from UMAP weighted adjacency matrix with unknown values encoded as infinite values. - I actually don't know how to turn the UMAP weight into a reasonable distance. I just used the inverse. (doesn't work!)
 
-## [Notebook 07A](notebooks/archive/07A-HDBSCAN_on_UMAP_graph.ipynb) : Running HDBSCAN on partial distance matrices?
+## [Notebook 07A](07A-HDBSCAN_on_UMAP_graph.ipynb) : Running HDBSCAN on partial distance matrices?
 
 In this notebook, we use a decent code for clustering sparse distance matrices. We try it on a number of matrix transformation, namely:
 * Neighborhood amplification (Romeo and Juliet) : each edge weight is replaced by the average of weights (including 0-weight) between the two endpoints' neighborhoods. If a node appears in both neiborhoods, we "clone" it and add an edge of weight 1 between the node and itself.
@@ -73,23 +73,23 @@ In this notebook, we use a decent code for clustering sparse distance matrices. 
 Results vary from not good to very bad.
 
 
-## [Notebook 08](notebooks/archive/08-UMAP-nepochs.ipynb) : What precision does UMAP need for good clustering?
+## [Notebook 08](08-UMAP-nepochs.ipynb) : What precision does UMAP need for good clustering?
 
 We study the impact of UMAP's parameter n_epochs on the HDBSCAN clustering task. We wish to see what portion of the work performed by UMAP is needed for enabling cluster identification.
 
-## [Notebook 09](notebooks/archive/09-plot_slides.ipynb) : Plots for slides
+## [Notebook 09](09-plot_slides.ipynb) : Plots for slides
 
 Notebook used to generate plots for presentations.
 
-## [Notebook 10](notebooks/10-boundary_nodes.ipynb) : Are boundary nodes identifiable?
+## [Notebook 10](10-boundary_nodes.ipynb) : Are boundary nodes identifiable?
 
 TODO (not much has been tried here.) The intention here is to study features of nodes and see if we can disciminate boundary nodes from non-boundary nodes. A boundary node is a node that is connected to at least one node that is part of a different ground-truth community. The set of boundary nodes depends a lot on $k$, the number of neighbors, with a very large $k$, every node is a boundary node. 
 
-## [Notebook 10A](notebooks/archive/10A-threshold_edge_weights.ipynb) : What if we filter edges based on weights?
+## [Notebook 10A](10A-threshold_edge_weights.ipynb) : What if we filter edges based on weights?
 
 Here, we have looked at running Leiden as a graph clustering algorithm on different filtered version of the UMAP graph. The filtering helps or makes it worst depending on the dataset. We have found nothing that systematically helps.
 
-## [Notebook 11](notebooks/archive/11-edge_classifier.ipynb)  and  [Notebook 12](notebooks/archive/11-edge_clustering.ipynb): Can we identify external edges from features?
+## [Notebook 11](11-edge_classifier.ipynb)  and  [Notebook 12](12-edge_clustering.ipynb): Can we identify external edges from features?
 
 The goal of this notebook is to characterize edges of the UMAP graph with respect with their position (internal/external) in the groundtruth partition. To do so, we train an edge classifier based on some edge characteristics to predict if the edge is internal or external with respect to the ground truth partition. The edge features we consider are:
 * high dimensional distance between the edge's endpoints
@@ -100,21 +100,21 @@ We do this with all edges of all datasets at once. Our intent is to find discrim
 
 TODO: This analysis is not complete I have first struggle with the imbalanced aspect of the problem. The problem is imbalanced in two ways : some datasets have a lot more edges than others, and the proportion of exteral edges is very small compared to the proportion of internal edges. From what we see on the 2-d plot of the edge features, the largest dataset (MNIST) explains most of the variabilty observed.
 
-## [Notebook 13](notebooks/archive/13-connectedComp_truncated.ipynb) : Iterate Romeo and Juliet weights.
+## [Notebook 13](13-connectedComp_truncated.ipynb) : Iterate Romeo and Juliet weights.
 
 This is link to one of the method tried in notebook 07A.
 
-## [Notebook 14](notebooks/archive/14-Vectorize_neighborhoods.ipynb) : Iterate Romeo and Juliet weights.
+## [Notebook 14](14-Vectorize_neighborhoods.ipynb) : Iterate Romeo and Juliet weights.
 
 The intention here was to use the adjacency matrix as a vector representation, re-weighted by the information gain and run HDBSCAN on this high dimensional representation (don't see why it wouldn't suffer from high dimensional issues?) Did not pursue because HDBSCAN does not handle reading a sparse matrix as entry.
 
-## [Notebook 15](notebooks/archive/15-Curvature.ipynb) : Ricci Flow Clustering
+## [Notebook 15](15-Curvature.ipynb) : Ricci Flow Clustering
 
 There is a recent paper that does dimension reduction using Ricci flows, and it seems very promision. They start by constructing the weighted UMAP graph, and then they modify the weights using a notion of curvature. They compare their results against UMAP and what they get is almost too good to be true. Leland suggested to look into it in order to see if any ideas there could be apply to high dimensional clustering. It turns out that the paper they based their work off is a graph clustering paper that uses Ricci flows on graphs. Those results were published in Nature and their code is available.
 
 Here, I try to run their graph clustering code on the UMAP graph we get and the results I get are juste terrible. François did the same on graphs very easy to cluster, and same results for him: nothing works.
 
-## [Notebook 16](notebooks/archive/16-UMAP-on-graphs-1-complete-graph.ipynb) : Exploring UMAP on a complete graph
+## [Notebook 16](16-UMAP-on-graphs-1-complete-graph.ipynb) : Exploring UMAP on a complete graph
 
 Starter question: When everything is equally far apart, how does it pick $k$ neighbours when $n$ is bigger than $k$? I'm thinking about whether it breaks it down in a balanced way or not. How does it tear apart something it can't? What happens? An $n$-simplex lives in $n-1$ dimensions. Does it do what's expected when $k=n$ (assuming by taking $k$ neighbours I'm count myself as a neighbour)?
 
@@ -127,7 +127,7 @@ Starter question: When everything is equally far apart, how does it pick $k$ nei
 * When $k=n-1$, $X \rightarrow U(X)$ is the identity, as expected (there's really no other choice). I'd expect, in theory, that $U(X)$ for any graph $X$ on $n$ nodes should give the same graph with different weights perhaps, as all other nodes are in the $k$-nearest neighbours. This doesn't quite bear out like this. See below.
 * **Technical note:** the graph layout step $V(X) \rightarrow Y$ refuses to place and layout singletons in the `metric='precomputed'` code path. This means that the fuzzy intersection fails to embed all of the $n$-simplex and morally only embeds birdirectional edges coming from $U(X)$. With random sampling this means that there is some counting argument (that I'm not going to work out here) that means that we can work out exactly how many point and edges we'd expect to preserve here. Morally the number is based on how likely 2 points are to choose each other as neighbours. In other words, the bigger $n$ is relative to $k$, the fewer points (proportional to $n$) get embedded. In this case I'd prefer laying out the singletons to not embedding them at all. I'm not sure yet what UMAP does to lay out disconnected components (in the case with a precomputed metric and random initialization for the graph layout) and what the issue is with randomly placing the singletons, but I'm assuming there's a reason this is bad....need to find out more.
 
-## [Notebook 17](notebooks/archive/17-UMAP-on-graphs-2.ipynb) : Exploring UMAP on a graph - Part 2 - Adjacency as Similarity
+## [Notebook 17](17-UMAP-on-graphs-2.ipynb) : Exploring UMAP on a graph - Part 2 - Adjacency as Similarity
 
 Moving on from the complete graph example, let's more generally consider what happens when we consider two nodes similar if they are adjacent aka. give distance 1 when there is an edge and otherwise distance is $\infty$ (often using 1000 instead of $\infty$ since the precomputed code path doesn't take sparse matrices).
 
@@ -135,11 +135,11 @@ Moving on from the complete graph example, let's more generally consider what ha
 * What structures are preserved from $X$ to $V(X)$ when using adjacency as similarity? What is not preserved? Explore cliques for this.
 * It seems like the $k$ relative to the degree distribution should matter...quantify this? Compare with randomly removing edges.
 
-## [Notebook 18](notebooks/archive/18-UMAP-on-graphs-3-football-dataset.ipynb) 
+## [Notebook 18](18-UMAP-on-graphs-3-football-dataset.ipynb) 
 
 See Notebook 17 for explanation.
 
-## [Notebook 19](notebooks/archive/19-Concensus_Clustering_Random_graphs.ipynb) and [Notebook 19A](notebooks/archive/19A-Concensus_Clustering_Diffused_graphs.ipynb) Concensus clustering on Random Graphs
+## [Notebook 19](19-Concensus_Clustering_Random_graphs.ipynb) and [Notebook 19A](19A-Concensus_Clustering_Diffused_graphs.ipynb) Concensus clustering on Random Graphs
 
 The graph obtained via UMAP has weights that can be interpreted as the probability of the edge’s existence. These weights can be used to generate several unweighted random graphs obtained by keeping edges with a probability proportional to their weights. We are exploring the idea of using a consensus clustering by clustering each random graph separately and see if this turns out to be a good way to obtain good clusters of the high dimensional points.
 
@@ -155,15 +155,15 @@ I used an ensemble of 20 members. I used different weak learners - Leiden or con
 
 The results show that some of these combinations work well for a given example or another. But overall, straight Leiden is a better option for all graphs.
 
-## [Notebook 20](notebooks/archive/20-HDBSCAN_on_diffusion_and_pruning.ipynb) and [Notebook 20A](notebooks/archive/20A-HDBSCAN_diffusion_prune_with_quantiles.ipynb) How to prune off external edges?
+## [Notebook 20](20-HDBSCAN_on_diffusion_and_pruning.ipynb) and [Notebook 20A](20A-HDBSCAN_diffusion_prune_with_quantiles.ipynb) How to prune off external edges?
 
 In this notebook, we try diffusing edge weights via the directed k-nn graph, and pruning all edges that have a resulting value under a certain threshold. This method does indeed increase the density of internal edges and reduces the density of external edges, but not everywhere. Some external edges survive that are part of a very large number of triangles. Therefore, running HDBSCAN or a graph clustering on the resulting graph does not yield the right clusters.
 
-## [Notebook 21](notebooks/archive/21-hierarchical-clustering-by-weight-on-umap-graph-COIL.ipynb) Hierarchical clustering on the weighted UMAP graph
+## [Notebook 21](21-hierarchical-clustering-by-weight-on-umap-graph-COIL.ipynb) Hierarchical clustering on the weighted UMAP graph
 
 This is an attempt to use hierarchical clustering on the weighted UMAP graph directly.
 
-## [Notebook 22](notebooks/archive/22-normal_probabilities.ipynb) Not the UMAP graph... a different graph!
+## [Notebook 22](22-normal_probabilities.ipynb) Not the UMAP graph... a different graph!
 
 The goal is to contruct a graph with edge weights given by estimating the probability of being the nearest neighbor. How can we estimate such a probability? Surely the sample is either the nearest neighbor or it isn't? We assume sampling has been random and somewhat noisy; but that the distribution of samples is locally uniform. In other words we assume that in a local region there is a distribution of distances to the nearest neighbor. This distribution is asymptotically a Gamma distribution; since we are in high dimensions this can be well approximated by a normal distribution (which is much cheaper to model, and to compute probabilities for). Thus for each sample we consider it's local neighborhood and fit a model of the distance to the nearest neighbor for samples in that neighborhood. Given such a model we can then compute the probability that the nearest neighbor of the sample is at least as far away as any given sample, and thus create an edge with w weight given by the probability that this point would have been the nearest neighbor under our model. This provides a (directed!) graph with proabilities assigned to edges.
 
