@@ -5,7 +5,7 @@ Clustering high dimensional data points in challenging! The regular techniques s
 
 Previous exploration work can be found in the [archive folder](https://github.com/vpoulin/HighDimensionalClustering/blob/master/notebooks/archive/README.md)
 
-The new algorithm we are currently testing works as follow. It first builds a graph. The goal is to contruct a graph with edge weights given by estimating the probability of being the nearest neighbor. This provides a (directed!) graph with proabiulities assigned to edges. We can run single linkage clustering on the resulting graph, and then use HDBSCAN style condensed tree approaches to simplify and get some clusters out. Next we need single linkage clustering of the graph. That is most easily done by computing a minimum spanning forest, and then processing that into a forest of merge trees. Lastly we condense then extract clusters. We could use any technique, but went with the leaf extraction because it seemed to work better. The clustering of the graph works well in that it picks out most of the clusters, but it leaves a great deal of data as noise. We can fix that by running a label propagation through the graph. We do still want to keep the ability to label points as noise, and it would be good to keep the propagation soft, so we can do a Bayesian label propagation of probability vectors over possible labels, including a noise label, with a Bayesian update of the distribution at each propagation round. We can then iterate until relative convergence.
+The new algorithm we are currently testing works as follow. It first builds a graph. The goal is to contruct a graph with edge weights given by estimating the probability of being the nearest neighbor. This provides a (directed!) graph with probabilities assigned to edges. We can run single linkage clustering on the resulting graph, and then use HDBSCAN style condensed tree approaches to simplify and get some clusters out. Next we need single linkage clustering of the graph. That is most easily done by computing a minimum spanning forest, and then processing that into a forest of merge trees. Lastly we condense then extract clusters. We could use any technique, but went with the leaf extraction because it seemed to work better. The clustering of the graph works well in that it picks out most of the clusters, but it leaves a great deal of data as noise. We can fix that by running a label propagation through the graph. We do still want to keep the ability to label points as noise, and it would be good to keep the propagation soft, so we can do a Bayesian label propagation of probability vectors over possible labels, including a noise label, with a Bayesian update of the distribution at each propagation round. We can then iterate until relative convergence.
 
 See [Notebook 00]('notebooks/00-HighDimClusterer.ipynb') for the code.
 
@@ -15,18 +15,30 @@ One very nice aspect of the proposed algorithm is that it can naturally be adapt
 
 ## Stability Issues
 
-When investigating the predict function, we have encountered stability issues. That is, under a random sample that contains 90% of the 70,000 MNIST data points, the adjusted rand index we get for our clusterings vary from 0.85 to 0.92. The scores are clustered into two groups: the clusterings that yielded 10 clusters (same as ground truth) and the ones that yielded 11 clusters. More has to be learned from this experiment. We have started to [run experiments](notebooks/StabilitySamplingExperiments_HighDClustering.ipynb) and analyse results [here](notebooks/StabitilySamplingResults_0.9_MNIST.ipynb) and [here](notebooks/StabilitySamplingResults_decisionBoundary.ipynb).
+When investigating the predict function, we have encountered stability issues. That is, under a random sample that contains 90% of the 70,000 MNIST data points, the adjusted rand index we get for our clusterings vary from 0.85 to 0.92. The scores are clustered into two groups: the clusterings that yielded 10 clusters (same as ground truth) and the ones that yielded 11 clusters. More has to be learned from this experiment. 
+
+* [StabilitySamplingExperiments_HighDClustering](notebooks/StabilitySamplingExperiments_HighDClustering.ipynb)
+* [StabitilySamplingResults_0.9_MNIST](notebooks/StabitilySamplingResults_0.9_MNIST.ipynb)
+* [StabilitySamplingResults_decisionBoundary](notebooks/StabilitySamplingResults_decisionBoundary.ipynb)
 
 ## Parameter exploration
 
-The algorithm proposed runs under a large number of parameters. These parameters are not always intuitive to set and are not at all independent. Can the parameter space be transformed into a simplified space, more intuitive? We have started to [run experiments](notebooks/HyperParamsExperiments.ipynb) and analyse results [here](notebooks/HyperParamsResults_MNIST_boxplot.ipynb) and [here](notebooks/HyperParamsResults_MNIST_parallel_coord.ipynb).
+The algorithm proposed runs under a large number of parameters. These parameters are not always intuitive to set and are not at all independent. Can the parameter space be transformed into a simplified space, more intuitive? 
+
+* [HyperParamsExperiments](notebooks/HyperParamsExperiments.ipynb)
+* [HyperParamsResults_MNIST_boxplot](notebooks/HyperParamsResults_MNIST_boxplot.ipynb)
+* [HyperParamsResults_MNIST_parallel_coord](notebooks/HyperParamsResults_MNIST_parallel_coord.ipynb)
 
 ### Issues with min_cluster_size parameter
 The min-cluster-size parameter is used to build the condensed tree that is in turn use to seed the label propagation step of the algorithm. Because of the label propagation step, the minimum cluster size given in the parameters can be much smaller than the minimum cluster size. With the Japanese character Kuzushiji-MNIST Dataset, we observe the following problem. If the min-cluster-size is not small enough, some of the smallish clusters are just labelled as noise. If we make the min-cluster-size small enough, we fix the problem but we introduce a new one: larger clusters get split into smaller ones. 
 
-
-
 ## Theoretical insights into k-NN graphs
+
+The nearest neighbor probability models that are constructed at each node are obtained via an iterative process. They are first assigned a prior, and then the prior gets updated using the neighbor's models. The models are gaussian, so at each step, we update a $\mu$ and a $\sigma$ value. It turns out that the $\mu$'s updates can be obtained via a row-normalized version of the reachability matrix $I+A$ where $A$ is the adjacency of the directed graph. We are interested in understanding better those matrices and the convergence behaviour of the iterative update process.
+
+* [ModelStudy-propagation_via_matrix_multiply](notebooks/ModelStudy-propagation_via_matrix_multiply.ipynb)
+* [ModelStudy-mus_vs_degrees](notebooks/ModelStudy-mus_vs_degrees.ipynb)
+
 
 ABOUT EASYDATA
 --------------
