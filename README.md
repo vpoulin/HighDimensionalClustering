@@ -1,12 +1,34 @@
 High Dimensional Clustering
 ==============================
-_Author: vpoulin_
 
 Clustering high dimensional data points in challenging! The regular techniques such as k-means, DBSCAN, HDBSCAN, Agglomerative Clustering all suffer from the non-intuitive properties of metrics in high dimension. However, experiments have shown that dimension reduction techniques applied before running a clustering algorithm can really improve on the results obtained. More precisely, using UMAP to reduce dimensionality followed by HDBSCAN to identify clusters perform reasonably well in identifying the underlying clusters. In general, it performs better than using PCA for dimensionality reduction. The following figure shows results from a study of the [Pendigits data set](http://odds.cs.stonybrook.edu/pendigits-dataset/). We show clustering accuracies of five clustering algorithms on the original high dimensional points and on low dimensional points obtained using PCA or UMAP. The accuracies are measured with the adjusted Rand index (ARI) and the adjusted mutual information (AMI).
 
 ![](https://github.com/vpoulin/HighDimensionalClustering/blob/master/notebooks/figures/dim_red_4_clustering.png)
 
 Previous exploration work can be found in the [archive folder](https://github.com/vpoulin/HighDimensionalClustering/blob/master/notebooks/archive/README.md)
+
+The new algorithm we are currently testing works as follow. It first builds a graph. The goal is to contruct a graph with edge weights given by estimating the probability of being the nearest neighbor. This provides a (directed!) graph with proabiulities assigned to edges. We can run single linkage clustering on the resulting graph, and then use HDBSCAN style condensed tree approaches to simplify and get some clusters out. Next we need single linkage clustering of the graph. That is most easily done by computing a minimum spanning forest, and then processing that into a forest of merge trees. Lastly we condense then extract clusters. We could use any technique, but went with the leaf extraction because it seemed to work better. The clustering of the graph works well in that it picks out most of the clusters, but it leaves a great deal of data as noise. We can fix that by running a label propagation through the graph. We do still want to keep the ability to label points as noise, and it would be good to keep the propagation soft, so we can do a Bayesian label propagation of probability vectors over possible labels, including a noise label, with a Bayesian update of the distribution at each propagation round. We can then iterate until relative convergence.
+
+See [Notebook 00]('notebooks/00-HighDimClusterer.ipynb') for the code.
+
+## Predict cluster assignment for new data
+
+One very nice aspect of the proposed algorithm is that it can naturally be adapted to deal with new data: unseen points. So given a data partition, perhaps with noise, and a set of new points, we can predict to which of the existing clusters the new data points should be assigned, including a noise attribution. We currently have two versions of this *predict* function, but none of them has been tested extensively so far. (The code is part of the 00 notebook).
+
+## Stability Issues
+
+When investigating the predict function, we have encountered stability issues. That is, under a random sample that contains 90% of the 70,000 MNIST data points, the adjusted rand index we get for our clusterings vary from 0.85 to 0.92. The scores are clustered into two groups: the clusterings that yielded 10 clusters (same as ground truth) and the ones that yielded 11 clusters. More has to be learned from this experiment. We have started to [run experiments](notebooks/StabilitySamplingExperiments_HighDClustering.ipynb) and analyse results [here](notebooks/StabitilySamplingResults_0.9_MNIST.ipynb) and [here](notebooks/StabilitySamplingResults_decisionBoundary.ipynb).
+
+## Parameter exploration
+
+The algorithm proposed runs under a large number of parameters. These parameters are not always intuitive to set and are not at all independent. Can the parameter space be transformed into a simplified space, more intuitive? We have started to [run experiments](notebooks/HyperParamsExperiments.ipynb) and analyse results [here](notebooks/HyperParamsResults_MNIST_boxplot.ipynb) and [here](notebooks/HyperParamsResults_MNIST_parallel_coord.ipynb).
+
+### Issues with min_cluster_size parameter
+The min-cluster-size parameter is used to build the condensed tree that is in turn use to seed the label propagation step of the algorithm. Because of the label propagation step, the minimum cluster size given in the parameters can be much smaller than the minimum cluster size. With the Japanese character Kuzushiji-MNIST Dataset, we observe the following problem. If the min-cluster-size is not small enough, some of the smallish clusters are just labelled as noise. If we make the min-cluster-size small enough, we fix the problem but we introduce a new one: larger clusters get split into smaller ones. 
+
+
+
+## Theoretical insights into k-NN graphs
 
 ABOUT EASYDATA
 --------------
