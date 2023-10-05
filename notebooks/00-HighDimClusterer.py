@@ -1146,6 +1146,10 @@ class HighDimClusterer(BaseEstimator, ClusterMixin):
         TODO: Replace this with Valerie's actual predict function.  Yay Valerie!
         Compute a soft clustering of X under a precomputed clustering model.  
         That is a probability vector of each row in X being a member of each cluster.
+        The connects a new points to their k-NN from the original data set. 
+        It then builds their Gaussian models by doing one round of Bayesian updates, i.e., it only uses neighbours' models. 
+        The models are then use to weight and truncate edges attached to new points. 
+        Finally, the soft clustering is the weighted average of the (remaining) nearest neighbours' soft clusterings.
         
         X: {array-like} of shape (n_samples, n_features)                
             Training vectors, where `n_samples` is the number of samples
