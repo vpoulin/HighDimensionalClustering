@@ -1,0 +1,42 @@
+add_anaconda_token: true
+allow_non_channel_urls: false
+allowlist_channels: []
+channel_alias: https://conda.anaconda.org
+channels:
+  - defaults
+custom_channels:
+  pkgs/main: https://repo.anaconda.com
+  pkgs/r: https://repo.anaconda.com
+  pkgs/pro: https://repo.anaconda.com
+custom_multichannels:
+  defaults:
+    - https://repo.anaconda.com/pkgs/main
+    - https://repo.anaconda.com/pkgs/r
+  local: []
+default_channels:
+  - https://repo.anaconda.com/pkgs/main
+  - https://repo.anaconda.com/pkgs/r
+experimental: []
+fetch_threads: '5'
+migrated_channel_aliases: []
+migrated_custom_channels: {}
+override_channels_enabled: true
+repodata_fns:
+  - current_repodata.json
+  - repodata.json
+repodata_threads: 0
+restore_free_channel: false
+use_only_tar_bz2: false
+aggressive_update_packages:
+  - ca-certificates
+  - certifi
+  - openssl
+auto_update_conda: true
+channel_priority: flexible
+create_default_packages: []
+disallowed_packages: []
+force_reinstall: false
+pinned_packages: []
+pip_interop_enabled: true
+solver: classic
+track_features: []
