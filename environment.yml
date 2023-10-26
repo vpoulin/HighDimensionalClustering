@@ -5,46 +5,46 @@ channels:
 dependencies:
     - pip:
       - -e .
-      - python-dotenv>=0.5.1
-      - nbval
-      - nbdime
+      - cdlib
       - gdown
       - igraph
-      - partition-igraph
-      - cdlib
       - leidenalg
+      - nbdime
+      - nbval
+      - partition-igraph
       - pynndescent
-    - pip
-    - networkx
-    - setuptools
-    - wheel
-    - git>=2.5
-    - sphinx
+      - python-dotenv>=0.5.1
     - bokeh
+    - cairo
     - chardet
     - click
     - colorcet
+    - conda-forge::hdbscan
+    - conda-forge::rarfile
+    - conda-forge::umap-learn
     - coverage
     - coveralls
     - datashader
+    - fsspec
+    - git>=2.5
     - holoviews
-    - matplotlib
+    - joblib
     - jupyter
     - jupyterlab
+    - matplotlib
+    - nb_conda_kernels
+    - networkx
+    - pandas
+    - pathlib
+    - pip
+    - psutil
+    - pycairo
+    - python=3.9
+    - requests
     - scikit-image
     - scikit-learn
     - scipy
     - seaborn
-    - joblib
-    - nb_conda_kernels
-    - pandas
-    - requests
-    - pathlib
-    - fsspec
-    - python=3.7
-    - psutil
-    - cairo
-    - pycairo
-    - conda-forge::umap-learn
-    - conda-forge::hdbscan
-    - conda-forge::rarfile
+    - setuptools
+    - sphinx
+    - wheel
