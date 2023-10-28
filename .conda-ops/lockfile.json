@@ -2,6 +2,3606 @@
   {
     "channel": "pkgs/main",
     "hash": {
+      "md5": "82810a5f6dcdcef144855b910372f88b"
+    },
+    "manager": "conda",
+    "name": "aiofiles",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/aiofiles-22.1.0-py39hca03da5_0.conda",
+    "version": "22.1.0"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "d4c3c78174af85de058de756c3bd4cad"
+    },
+    "manager": "conda",
+    "name": "aiosqlite",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/aiosqlite-0.18.0-py39hca03da5_0.conda",
+    "version": "0.18.0"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "21ad3b69a5ce6c22e724e9dbb4cffa65"
+    },
+    "manager": "conda",
+    "name": "alabaster",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/noarch/alabaster-0.7.12-pyhd3eb1b0_0.tar.bz2",
+    "version": "0.7.12"
+  },
+  {
+    "channel": "pypi",
+    "editable": false,
+    "hash": {
+      "sha256": "eee96824c3a213fddf271a0fd0761fc37234efd1e88135ef363eb33ea9215c1b"
+    },
+    "manager": "pip",
+    "name": "angelcommunity",
+    "pip_name": "angelcommunity",
+    "platform": "osx-arm64",
+    "requested": false,
+    "url": "https://files.pythonhosted.org/packages/86/78/af726ca507c849f6361475444faf7a93a11d51c7ed2b47f58339b3a3f232/angelcommunity-2.0.0-py3-none-any.whl",
+    "version": "2.0.0"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "37ce3a0cef00eceb9074b993da31e1ca"
+    },
+    "manager": "conda",
+    "name": "anyio",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/anyio-3.5.0-py39hca03da5_0.conda",
+    "version": "3.5.0"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "d516574635ebbb1f27d928c2413a30b2"
+    },
+    "manager": "conda",
+    "name": "aom",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/aom-3.6.0-h313beb8_0.conda",
+    "version": "3.6.0"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "29962b930d86d3674a3f18d0556524a3"
+    },
+    "manager": "conda",
+    "name": "appnope",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/appnope-0.1.2-py39hca03da5_1001.conda",
+    "version": "0.1.2"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "f00b851bc61b4c313903d31c7daecb09"
+    },
+    "manager": "conda",
+    "name": "argon2-cffi",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/noarch/argon2-cffi-21.3.0-pyhd3eb1b0_0.conda",
+    "version": "21.3.0"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "551103306a0d4b898bd84f0db56682ad"
+    },
+    "manager": "conda",
+    "name": "argon2-cffi-bindings",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/argon2-cffi-bindings-21.2.0-py39h1a28f6b_0.conda",
+    "version": "21.2.0"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "140486e2ce4f3931b44aa5f7ff8d88da"
+    },
+    "manager": "conda",
+    "name": "asttokens",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/noarch/asttokens-2.0.5-pyhd3eb1b0_0.conda",
+    "version": "2.0.5"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "6a3b610c02e1dc52099645615439c3f2"
+    },
+    "manager": "conda",
+    "name": "attrs",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/attrs-23.1.0-py39hca03da5_0.conda",
+    "version": "23.1.0"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "b782d938236eb9a3c808ed4d87f0ce84"
+    },
+    "manager": "conda",
+    "name": "babel",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/babel-2.11.0-py39hca03da5_0.conda",
+    "version": "2.11.0"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "b2aa5503875aba2f1d88cae9df9a96d5"
+    },
+    "manager": "conda",
+    "name": "backcall",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/noarch/backcall-0.2.0-pyhd3eb1b0_0.tar.bz2",
+    "version": "0.2.0"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "5a314fd89c8318912886329dbbe703b5"
+    },
+    "manager": "conda",
+    "name": "beautifulsoup4",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/beautifulsoup4-4.12.2-py39hca03da5_0.conda",
+    "version": "4.12.2"
+  },
+  {
+    "channel": "pypi",
+    "editable": false,
+    "hash": {
+      "sha256": "2de94db7dac172cb9e6bc85cce4694a13df5e90258622f4036708ed07d95d179"
+    },
+    "manager": "pip",
+    "name": "bimlpa",
+    "pip_name": "bimlpa",
+    "platform": "osx-arm64",
+    "requested": false,
+    "url": "https://files.pythonhosted.org/packages/11/8c/7d409d7e7bcbd261c7f19737feaa1ef66514512c7f7d6b9a776d7aac7c33/bimlpa-0.1.2-py3-none-any.whl",
+    "version": "0.1.2"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "082557147829a904fa986cb86dd1e45a"
+    },
+    "manager": "conda",
+    "name": "blas",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/blas-1.0-openblas.conda",
+    "version": "1.0"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "256eb7e384e35f993ef8ccd6c4f45e58"
+    },
+    "manager": "conda",
+    "name": "bleach",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/noarch/bleach-4.1.0-pyhd3eb1b0_0.conda",
+    "version": "4.1.0"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "29542a1abf52b906fed3a34835c28386"
+    },
+    "manager": "conda",
+    "name": "blosc",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/blosc-1.21.3-h313beb8_0.conda",
+    "version": "1.21.3"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "8c6a9b3c109f7e9d68a940c22180be01"
+    },
+    "manager": "conda",
+    "name": "bokeh",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/bokeh-3.2.1-py39h33ce5c2_0.conda",
+    "version": "3.2.1"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "a0f8d0dfad588937467cd208525438a8"
+    },
+    "manager": "conda",
+    "name": "bottleneck",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/bottleneck-1.3.5-py39heec5a64_0.conda",
+    "version": "1.3.5"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "0700d6e2e51affff8dce9e3878f31db9"
+    },
+    "manager": "conda",
+    "name": "brotli",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/brotli-1.0.9-h1a28f6b_7.conda",
+    "version": "1.0.9"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "55869fe9d3d2d597b0f49a96b6491554"
+    },
+    "manager": "conda",
+    "name": "brotli-bin",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/brotli-bin-1.0.9-h1a28f6b_7.conda",
+    "version": "1.0.9"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "6ada85fadd8724b0c51eec2b9d3a62d7"
+    },
+    "manager": "conda",
+    "name": "brotli-python",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/brotli-python-1.0.9-py39hc377ac9_7.conda",
+    "version": "1.0.9"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "7491807d32fbc4e842e5dcdaeb74a76b"
+    },
+    "manager": "conda",
+    "name": "brunsli",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/brunsli-0.1-hc377ac9_1.conda",
+    "version": "0.1"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "e5b4ef8ae5b3b5f0e3c9ca4bcf1a3b2f"
+    },
+    "manager": "conda",
+    "name": "bzip2",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/bzip2-1.0.8-h620ffc9_4.conda",
+    "version": "1.0.8"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "0c6c92129aee2de12bf560f896f1e682"
+    },
+    "manager": "conda",
+    "name": "c-ares",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/c-ares-1.19.1-h80987f9_0.conda",
+    "version": "1.19.1"
+  },
+  {
+    "channel": "conda-forge",
+    "hash": {
+      "md5": "e1b99ac4dbcee71a71682996f67f7965"
+    },
+    "manager": "conda",
+    "name": "ca-certificates",
+    "platform": "osx-arm64",
+    "url": "https://conda.anaconda.org/conda-forge/osx-arm64/ca-certificates-2023.7.22-hf0a4a13_0.conda",
+    "version": "2023.7.22"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "0909e4b8447f837b09eadca07d1f7680"
+    },
+    "manager": "conda",
+    "name": "cairo",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/cairo-1.16.0-h302bd0f_5.conda",
+    "version": "1.16.0"
+  },
+  {
+    "channel": "pypi",
+    "editable": false,
+    "hash": {
+      "sha256": "a0caf928e83a124421f1b02ac0aed4b0f8583e5518ad1481ab39bd9193c3c9e1"
+    },
+    "manager": "pip",
+    "name": "cdlib",
+    "pip_name": "cdlib",
+    "platform": "osx-arm64",
+    "requested": true,
+    "url": "https://files.pythonhosted.org/packages/c8/63/33f17b7da53502e29d9476b538b9ae5eb05c47d060800caa730f781a8e93/cdlib-0.3.0-py3-none-any.whl",
+    "version": "0.3.0"
+  },
+  {
+    "channel": "conda-forge",
+    "hash": {
+      "md5": "7f3dbc9179b4dde7da98dfb151d0ad22"
+    },
+    "manager": "conda",
+    "name": "certifi",
+    "platform": "osx-arm64",
+    "url": "https://conda.anaconda.org/conda-forge/noarch/certifi-2023.7.22-pyhd8ed1ab_0.conda",
+    "version": "2023.7.22"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "95b8ee8a8bfc01d4322e4d31facc24d2"
+    },
+    "manager": "conda",
+    "name": "cffi",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/cffi-1.15.1-py39h80987f9_3.conda",
+    "version": "1.15.1"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "2b32a8f856fe3270305dae3814d74869"
+    },
+    "manager": "conda",
+    "name": "cfitsio",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/cfitsio-3.470-h7f6438f_7.conda",
+    "version": "3.470"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "158abe34965b9b785e7ad22117e0a3a4"
+    },
+    "manager": "conda",
+    "name": "chardet",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/chardet-4.0.0-py39hca03da5_1003.conda",
+    "version": "4.0.0"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "7a1157452fd80dd6576d73816c28aeee"
+    },
+    "manager": "conda",
+    "name": "charls",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/charls-2.2.0-hc377ac9_0.conda",
+    "version": "2.2.0"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "e7a441d94234b2b5fafee06e25dbf076"
+    },
+    "manager": "conda",
+    "name": "charset-normalizer",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/noarch/charset-normalizer-2.0.4-pyhd3eb1b0_0.conda",
+    "version": "2.0.4"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "b2ecd3a9ca55931c923f6c0831e17e6e"
+    },
+    "manager": "conda",
+    "name": "click",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/click-8.1.7-py39hca03da5_0.conda",
+    "version": "8.1.7"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "9d3b07d44f9320aba13f7a4625c69085"
+    },
+    "manager": "conda",
+    "name": "cloudpickle",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/cloudpickle-2.2.1-py39hca03da5_0.conda",
+    "version": "2.2.1"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "7ba716cf15f5295355c7438b08f15507"
+    },
+    "manager": "conda",
+    "name": "colorama",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/colorama-0.4.6-py39hca03da5_0.conda",
+    "version": "0.4.6"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "8da0b10e877376713025536f215957b6"
+    },
+    "manager": "conda",
+    "name": "colorcet",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/colorcet-3.0.1-py39hca03da5_0.conda",
+    "version": "3.0.1"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "d03d10dd9554f541465345ca11785c70"
+    },
+    "manager": "conda",
+    "name": "comm",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/comm-0.1.2-py39hca03da5_0.conda",
+    "version": "0.1.2"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "ffe13b4188becf45719ae5b7c6cfe7e1"
+    },
+    "manager": "conda",
+    "name": "contourpy",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/contourpy-1.0.5-py39h525c30c_0.conda",
+    "version": "1.0.5"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "cce684be4f26aa6a69ea2d7037716e69"
+    },
+    "manager": "conda",
+    "name": "coverage",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/coverage-5.5-py39h1a28f6b_2.conda",
+    "version": "5.5"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "1d14849e6f4d896b5dca07f504778b96"
+    },
+    "manager": "conda",
+    "name": "coveralls",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/noarch/coveralls-3.2.0-pyhd3eb1b0_0.conda",
+    "version": "3.2.0"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "ee792ce1eabf47b3be464de4bf217dcb"
+    },
+    "manager": "conda",
+    "name": "cryptography",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/cryptography-41.0.3-py39hd4332d6_0.conda",
+    "version": "41.0.3"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "16d1f5d7c25d1a5a2e98981cdad266db"
+    },
+    "manager": "conda",
+    "name": "curl",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/curl-8.4.0-h02f6b3c_0.conda",
+    "version": "8.4.0"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "f5e365d2cdb66d547eb8c3ab93843aab"
+    },
+    "manager": "conda",
+    "name": "cycler",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/noarch/cycler-0.11.0-pyhd3eb1b0_0.conda",
+    "version": "0.11.0"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "04f18edbb1f8d347b12ecd0eb86f23eb"
+    },
+    "manager": "conda",
+    "name": "cyrus-sasl",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/cyrus-sasl-2.1.28-h9131b1a_1.conda",
+    "version": "2.1.28"
+  },
+  {
+    "channel": "conda-forge",
+    "hash": {
+      "md5": "df002cea6acf523a1bdb8c0d46be7c0d"
+    },
+    "manager": "conda",
+    "name": "cython",
+    "platform": "osx-arm64",
+    "url": "https://conda.anaconda.org/conda-forge/osx-arm64/cython-0.29.34-py39h23fbdae_0.conda",
+    "version": "0.29.34"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "fc8f57fec0b061d83ed532b5b363905c"
+    },
+    "manager": "conda",
+    "name": "cytoolz",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/cytoolz-0.12.0-py39h1a28f6b_0.conda",
+    "version": "0.12.0"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "50f3ad1f8f479e6861e5f20fefac3646"
+    },
+    "manager": "conda",
+    "name": "dask-core",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/dask-core-2023.6.0-py39hca03da5_0.conda",
+    "version": "2023.6.0"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "d4c923ceedacd8d5d18f994feed8dbb8"
+    },
+    "manager": "conda",
+    "name": "datashader",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/datashader-0.15.2-py39hca03da5_0.tar.bz2",
+    "version": "0.15.2"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "784ca828f63cb987dbef66aab35d48c9"
+    },
+    "manager": "conda",
+    "name": "datashape",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/datashape-0.5.4-py39hca03da5_1.conda",
+    "version": "0.5.4"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "6b5bdb6514aef41c2c4a92425165612a"
+    },
+    "manager": "conda",
+    "name": "dav1d",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/dav1d-1.2.1-h80987f9_0.conda",
+    "version": "1.2.1"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "81fab750623148488ba5709a81151060"
+    },
+    "manager": "conda",
+    "name": "debugpy",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/debugpy-1.6.7-py39h313beb8_0.conda",
+    "version": "1.6.7"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "4d969aac32a0faf84af90c797bfc7fec"
+    },
+    "manager": "conda",
+    "name": "decorator",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/noarch/decorator-5.1.1-pyhd3eb1b0_0.conda",
+    "version": "5.1.1"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "d912068b0729930972adcaac338882c0"
+    },
+    "manager": "conda",
+    "name": "defusedxml",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/noarch/defusedxml-0.7.1-pyhd3eb1b0_0.conda",
+    "version": "0.7.1"
+  },
+  {
+    "channel": "pypi",
+    "editable": false,
+    "hash": {
+      "sha256": "2dc023c9d2a8550a4039c4c46f02153c467a7ccce9144e38a1ea0d5b0054e362"
+    },
+    "manager": "pip",
+    "name": "demon",
+    "pip_name": "demon",
+    "platform": "osx-arm64",
+    "requested": false,
+    "url": "https://files.pythonhosted.org/packages/96/85/5f9146e3f8d7324d8741cd3bea9b99926d5ee75571b9610c661b1bbd06f5/demon-2.0.6-py3-none-any.whl",
+    "version": "2.0.6"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "8448a498f048e6ef187738ad9320fc78"
+    },
+    "manager": "conda",
+    "name": "docopt",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/docopt-0.6.2-py39hca03da5_1.conda",
+    "version": "0.6.2"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "c582da59db246e9af56643c531c893a0"
+    },
+    "manager": "conda",
+    "name": "docutils",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/docutils-0.18.1-py39hca03da5_3.conda",
+    "version": "0.18.1"
+  },
+  {
+    "channel": "pypi",
+    "editable": false,
+    "hash": {
+      "sha256": "349fa6e55d6a1fc1ef694539bc6056d93990d9fa77e9640228703d591285172c"
+    },
+    "manager": "pip",
+    "name": "dynetx",
+    "pip_name": "dynetx",
+    "platform": "osx-arm64",
+    "requested": false,
+    "url": "https://files.pythonhosted.org/packages/cb/66/a185a9ba8edcf75c4aacf37198702727a322772c72b8312ca26a35ebbf69/dynetx-0.3.2-py3-none-any.whl",
+    "version": "0.3.2"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "d05223791a9f262187dd7ce17d3f1fdf"
+    },
+    "manager": "conda",
+    "name": "entrypoints",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/entrypoints-0.4-py39hca03da5_0.conda",
+    "version": "0.4"
+  },
+  {
+    "channel": "pypi",
+    "editable": false,
+    "hash": {
+      "sha256": "295129fefb014eb7db8efbc1c65e81b1c7ce3f947d267824ba36daecacbb37dc"
+    },
+    "manager": "pip",
+    "name": "eva-lcd",
+    "pip_name": "eva-lcd",
+    "platform": "osx-arm64",
+    "requested": false,
+    "url": "https://files.pythonhosted.org/packages/ee/fe/7465ba3e9637eb155fb79c4ccdbe92b90284fd5f70971d4061f52098ec2f/eva_lcd-0.1.1-py3-none-any.whl",
+    "version": "0.1.1"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "6eafdd8e3b00c3f4caa8b727ee02e083"
+    },
+    "manager": "conda",
+    "name": "exceptiongroup",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/exceptiongroup-1.0.4-py39hca03da5_0.conda",
+    "version": "1.0.4"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "7be61d1c3c555fb37682b28d7a53d622"
+    },
+    "manager": "conda",
+    "name": "executing",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/noarch/executing-0.8.3-pyhd3eb1b0_0.conda",
+    "version": "0.8.3"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "9e047c31ce14666539c772a2b2ddab25"
+    },
+    "manager": "conda",
+    "name": "expat",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/expat-2.5.0-h313beb8_0.conda",
+    "version": "2.5.0"
+  },
+  {
+    "channel": "pypi",
+    "editable": false,
+    "hash": {
+      "sha256": "a552f4fde758f4eab33191e9548f671970f8b06d436d31388c9aa1e5861a710f"
+    },
+    "manager": "pip",
+    "name": "filelock",
+    "pip_name": "filelock",
+    "platform": "osx-arm64",
+    "requested": false,
+    "url": "https://files.pythonhosted.org/packages/ea/c8/407364710cb9631ce306a97abff2d61836d603b258b5e5399b5f12a7f787/filelock-3.13.0-py3-none-any.whl",
+    "version": "3.13.0"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "9807fe89dd24ec3814b7de69e108f07a"
+    },
+    "manager": "conda",
+    "name": "fontconfig",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/fontconfig-2.14.1-hee714a5_2.conda",
+    "version": "2.14.1"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "bb9c5b5a6d892fca5efe4bf0203b6a48"
+    },
+    "manager": "conda",
+    "name": "fonttools",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/noarch/fonttools-4.25.0-pyhd3eb1b0_0.conda",
+    "version": "4.25.0"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "34e2801b75936fcfe2602485335e8a31"
+    },
+    "manager": "conda",
+    "name": "freetype",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/freetype-2.12.1-h1192e45_0.conda",
+    "version": "2.12.1"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "512fc13821395f870ade218edabf95b4"
+    },
+    "manager": "conda",
+    "name": "fsspec",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/fsspec-2023.9.2-py39hca03da5_0.conda",
+    "version": "2023.9.2"
+  },
+  {
+    "channel": "pypi",
+    "editable": false,
+    "hash": {
+      "sha256": "34a17436ed1e96697a86f9de3d15a3b0be01d8bc8de9c1dffd59fb8234ed5307"
+    },
+    "manager": "pip",
+    "name": "future",
+    "pip_name": "future",
+    "platform": "osx-arm64",
+    "requested": false,
+    "url": "https://files.pythonhosted.org/packages/8f/2e/cf6accf7415237d6faeeebdc7832023c90e0282aa16fd3263db0eb4715ec/future-0.18.3.tar.gz",
+    "version": "0.18.3"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "789a4ff2c9270c90d184f5a6a8f36eb6"
+    },
+    "manager": "conda",
+    "name": "gdbm",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/gdbm-1.18-h8fe7016_4.conda",
+    "version": "1.18"
+  },
+  {
+    "channel": "pypi",
+    "editable": false,
+    "hash": {
+      "sha256": "65d495699e7c2c61af0d0e9c32748fb4f79abaf80d747a87456c7be14aac2560"
+    },
+    "manager": "pip",
+    "name": "gdown",
+    "pip_name": "gdown",
+    "platform": "osx-arm64",
+    "requested": true,
+    "url": "https://files.pythonhosted.org/packages/e7/38/e3393edb5fd157abaa54292f31251f8c2ff739673f535990f8a43e69b9dd/gdown-4.7.1-py3-none-any.whl",
+    "version": "4.7.1"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "9f5d1dd881910edf9b94ba3263fde3e7"
+    },
+    "manager": "conda",
+    "name": "gettext",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/gettext-0.21.0-h13f89a0_1.conda",
+    "version": "0.21.0"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "369bd15de5973ada95596efd9f4209f7"
+    },
+    "manager": "conda",
+    "name": "giflib",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/giflib-5.2.1-h80987f9_3.conda",
+    "version": "5.2.1"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "7852d6bf1a5189829a899976cd64f6c9"
+    },
+    "manager": "conda",
+    "name": "git",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/git-2.40.1-pl5340h6cf2078_1.conda",
+    "version": "2.40.1"
+  },
+  {
+    "channel": "pypi",
+    "editable": false,
+    "hash": {
+      "sha256": "81a3407ddd2ee8df444cbacea00e2d038e40150acfa3001696fe0dcf1d3adfa4"
+    },
+    "manager": "pip",
+    "name": "gitdb",
+    "pip_name": "gitdb",
+    "platform": "osx-arm64",
+    "requested": false,
+    "url": "https://files.pythonhosted.org/packages/fd/5b/8f0c4a5bb9fd491c277c21eff7ccae71b47d43c4446c9d0c6cff2fe8c2c4/gitdb-4.0.11-py3-none-any.whl",
+    "version": "4.0.11"
+  },
+  {
+    "channel": "pypi",
+    "editable": false,
+    "hash": {
+      "sha256": "cf14627d5a8049ffbf49915732e5eddbe8134c3bdb9d476e6182b676fc573f8a"
+    },
+    "manager": "pip",
+    "name": "gitpython",
+    "pip_name": "GitPython",
+    "platform": "osx-arm64",
+    "requested": false,
+    "url": "https://files.pythonhosted.org/packages/8d/c4/82b858fb6483dfb5e338123c154d19c043305b01726a67d89532b8f8f01b/GitPython-3.1.40-py3-none-any.whl",
+    "version": "3.1.40"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "8ef113539b685922978998c472a95bd9"
+    },
+    "manager": "conda",
+    "name": "glib",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/glib-2.69.1-h514c7bf_2.conda",
+    "version": "2.69.1"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "9005707e68cd4228821d47f64df26113"
+    },
+    "manager": "conda",
+    "name": "gst-plugins-base",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/gst-plugins-base-1.14.1-h313beb8_1.conda",
+    "version": "1.14.1"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "c0a0abb6e3b2df65093c2b9cf8daccaa"
+    },
+    "manager": "conda",
+    "name": "gstreamer",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/gstreamer-1.14.1-h80987f9_1.conda",
+    "version": "1.14.1"
+  },
+  {
+    "channel": "conda-forge",
+    "hash": {
+      "md5": "1f50ddbba0f6dacfdf009e0dba1f433f"
+    },
+    "manager": "conda",
+    "name": "hdbscan",
+    "platform": "osx-arm64",
+    "url": "https://conda.anaconda.org/conda-forge/osx-arm64/hdbscan-0.8.33-py39h373d45f_4.conda",
+    "version": "0.8.33"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "c3ec30fb45d10916b2045144e85b39e5"
+    },
+    "manager": "conda",
+    "name": "holoviews",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/holoviews-1.17.1-py39hca03da5_0.conda",
+    "version": "1.17.1"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "14b4f572bb7dc8dde22a03057570cff2"
+    },
+    "manager": "conda",
+    "name": "icu",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/icu-68.1-hc377ac9_0.conda",
+    "version": "68.1"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "ff722653fdb6b4b49104b85b16b118e9"
+    },
+    "manager": "conda",
+    "name": "idna",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/idna-3.4-py39hca03da5_0.conda",
+    "version": "3.4"
+  },
+  {
+    "channel": "pypi",
+    "editable": false,
+    "hash": {
+      "sha256": "42fb6b69de069d0dc66a8606ad486aae19b500b01268cb1e64877ea931bd7ad7"
+    },
+    "manager": "pip",
+    "name": "igraph",
+    "pip_name": "igraph",
+    "platform": "osx-arm64",
+    "requested": true,
+    "url": "https://files.pythonhosted.org/packages/38/d8/0abcc30c61d60fdd460677b3ca1d6ac16f4a657d50eea8f461da76396e27/igraph-0.10.8-cp39-abi3-macosx_11_0_arm64.whl",
+    "version": "0.10.8"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "631b59a55e3f7789f02893a731c0126b"
+    },
+    "manager": "conda",
+    "name": "imagecodecs",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/imagecodecs-2023.1.23-py39h604db08_0.conda",
+    "version": "2023.1.23"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "4bcc0372ef2fa78a551c4ae3211b4188"
+    },
+    "manager": "conda",
+    "name": "imageio",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/imageio-2.31.4-py39hca03da5_0.conda",
+    "version": "2.31.4"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "fbfed888caba4dd7417d51883998f5b2"
+    },
+    "manager": "conda",
+    "name": "imagesize",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/imagesize-1.4.1-py39hca03da5_0.conda",
+    "version": "1.4.1"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "11209ce2b9a4b1a3f349e33b36381a87"
+    },
+    "manager": "conda",
+    "name": "importlib-metadata",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/importlib-metadata-6.0.0-py39hca03da5_0.conda",
+    "version": "6.0.0"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "0af8f090f7e0090aa5f92dd9d537c09d"
+    },
+    "manager": "conda",
+    "name": "importlib_metadata",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/noarch/importlib_metadata-6.0.0-hd3eb1b0_0.conda",
+    "version": "6.0.0"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "1e2576977cb109d67ba9be48697b80be"
+    },
+    "manager": "conda",
+    "name": "importlib_resources",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/importlib_resources-6.1.0-py39hca03da5_0.conda",
+    "version": "6.1.0"
+  },
+  {
+    "channel": "pypi",
+    "editable": false,
+    "hash": {
+      "sha256": "b6a85871a79d2e3b22d2d1b94ac2824226a63c6b741c88f7ae975f18b6778374"
+    },
+    "manager": "pip",
+    "name": "iniconfig",
+    "pip_name": "iniconfig",
+    "platform": "osx-arm64",
+    "requested": false,
+    "url": "https://files.pythonhosted.org/packages/ef/a6/62565a6e1cf69e10f5727360368e451d4b7f58beeac6173dc9db836a5b46/iniconfig-2.0.0-py3-none-any.whl",
+    "version": "2.0.0"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "4af49581891a0472825470cc261d02b4"
+    },
+    "manager": "conda",
+    "name": "ipykernel",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/ipykernel-6.25.0-py39h33ce5c2_0.conda",
+    "version": "6.25.0"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "6d3d966b67df259d0b7cd308a6fa1135"
+    },
+    "manager": "conda",
+    "name": "ipython",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/ipython-8.15.0-py39hca03da5_0.conda",
+    "version": "8.15.0"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "553832c0b872a28088a0001fa2ba3822"
+    },
+    "manager": "conda",
+    "name": "ipython_genutils",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/noarch/ipython_genutils-0.2.0-pyhd3eb1b0_1.conda",
+    "version": "0.2.0"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "a813b3e4c6450e0248f4e0a284ef6e04"
+    },
+    "manager": "conda",
+    "name": "ipywidgets",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/ipywidgets-8.0.4-py39hca03da5_0.conda",
+    "version": "8.0.4"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "02575a730c84aafd1da8ee5a2511776e"
+    },
+    "manager": "conda",
+    "name": "jedi",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/jedi-0.18.1-py39hca03da5_1.conda",
+    "version": "0.18.1"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "7f98b4bfccaf15d1812ed01f29c5260f"
+    },
+    "manager": "conda",
+    "name": "jinja2",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/jinja2-3.1.2-py39hca03da5_0.conda",
+    "version": "3.1.2"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "3ad88717e1850cc403ae54df9a8d0459"
+    },
+    "manager": "conda",
+    "name": "joblib",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/joblib-1.2.0-py39hca03da5_0.conda",
+    "version": "1.2.0"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "4dc30523b220156352725fc78d2dc4e3"
+    },
+    "manager": "conda",
+    "name": "jpeg",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/jpeg-9e-h80987f9_1.conda",
+    "version": "9e"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "4e721ee2dbfa20069719d2ee19185031"
+    },
+    "manager": "conda",
+    "name": "json5",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/noarch/json5-0.9.6-pyhd3eb1b0_0.conda",
+    "version": "0.9.6"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "4c7fdc6a5f149dbda30d2c75f8d7bf98"
+    },
+    "manager": "conda",
+    "name": "jsonschema",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/jsonschema-4.17.3-py39hca03da5_0.conda",
+    "version": "4.17.3"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "9c9047bf3cfabb0b53f6348843e6cb3d"
+    },
+    "manager": "conda",
+    "name": "jupyter",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/jupyter-1.0.0-py39hca03da5_8.conda",
+    "version": "1.0.0"
+  },
+  {
+    "channel": "pypi",
+    "editable": false,
+    "hash": {
+      "sha256": "416389dde2010df46d5fbbb7adb087a5607111070af65a1445391040f2babb5e"
+    },
+    "manager": "pip",
+    "name": "jupyter-server-mathjax",
+    "pip_name": "jupyter-server-mathjax",
+    "platform": "osx-arm64",
+    "requested": false,
+    "url": "https://files.pythonhosted.org/packages/7d/77/6a98cc88f1061c0206b427b602efb6fcb9bc369e958aee11676d5cfc4412/jupyter_server_mathjax-0.2.6-py3-none-any.whl",
+    "version": "0.2.6"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "21e1ae00012c1d8b779dc5041a3f7993"
+    },
+    "manager": "conda",
+    "name": "jupyter_client",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/jupyter_client-7.4.9-py39hca03da5_0.conda",
+    "version": "7.4.9"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "7ad4e405ddf8658944e547046c5b4ecb"
+    },
+    "manager": "conda",
+    "name": "jupyter_console",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/jupyter_console-6.6.3-py39hca03da5_0.conda",
+    "version": "6.6.3"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "941a8b8ed3ef853138ca5140b0116368"
+    },
+    "manager": "conda",
+    "name": "jupyter_core",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/jupyter_core-5.3.0-py39hca03da5_0.conda",
+    "version": "5.3.0"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "994a5e235d9cb5b659990da99377fde9"
+    },
+    "manager": "conda",
+    "name": "jupyter_events",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/jupyter_events-0.6.3-py39hca03da5_0.conda",
+    "version": "0.6.3"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "d0284b8b2d4d146a6f39479246be68cd"
+    },
+    "manager": "conda",
+    "name": "jupyter_server",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/jupyter_server-1.23.4-py39hca03da5_0.conda",
+    "version": "1.23.4"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "fd9db9366e6950681086e6a2ec1862e1"
+    },
+    "manager": "conda",
+    "name": "jupyter_server_fileid",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/jupyter_server_fileid-0.9.0-py39hca03da5_0.conda",
+    "version": "0.9.0"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "74da377e5bcff12d4bd231131bc2c485"
+    },
+    "manager": "conda",
+    "name": "jupyter_server_ydoc",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/jupyter_server_ydoc-0.8.0-py39hca03da5_1.conda",
+    "version": "0.8.0"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "0db27b09f02715900a021e712b22d650"
+    },
+    "manager": "conda",
+    "name": "jupyter_ydoc",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/jupyter_ydoc-0.2.4-py39hca03da5_0.conda",
+    "version": "0.2.4"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "31d7fbe666e50012e3ff48f138984ad7"
+    },
+    "manager": "conda",
+    "name": "jupyterlab",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/jupyterlab-3.6.3-py39hca03da5_0.conda",
+    "version": "3.6.3"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "af46aff4922ca45df6ba19b313df6070"
+    },
+    "manager": "conda",
+    "name": "jupyterlab_pygments",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/noarch/jupyterlab_pygments-0.1.2-py_0.conda",
+    "version": "0.1.2"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "522d4f57660827da1fd586c9d9745c39"
+    },
+    "manager": "conda",
+    "name": "jupyterlab_server",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/jupyterlab_server-2.22.0-py39hca03da5_0.conda",
+    "version": "2.22.0"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "72ea33382c04df86526af6145ceffa1a"
+    },
+    "manager": "conda",
+    "name": "jupyterlab_widgets",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/jupyterlab_widgets-3.0.5-py39hca03da5_0.conda",
+    "version": "3.0.5"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "db8c0cbf473b4875e202b39440917b03"
+    },
+    "manager": "conda",
+    "name": "jxrlib",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/jxrlib-1.1-h1a28f6b_2.conda",
+    "version": "1.1"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "f8d3749cd50240a92b738e4e25f75abf"
+    },
+    "manager": "conda",
+    "name": "kiwisolver",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/kiwisolver-1.4.4-py39h313beb8_0.conda",
+    "version": "1.4.4"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "4bcf072bd6fc82c9f40a4eb3c3c262a4"
+    },
+    "manager": "conda",
+    "name": "krb5",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/krb5-1.20.1-hf3e1bf2_1.conda",
+    "version": "1.20.1"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "455b7d3e933a8ef33b887846693619a7"
+    },
+    "manager": "conda",
+    "name": "lcms2",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/lcms2-2.12-hba8e193_0.conda",
+    "version": "2.12"
+  },
+  {
+    "channel": "pypi",
+    "editable": false,
+    "hash": {
+      "sha256": "d9aed1378f4ea4b1f425a1b04728d5cef6f9da9231091e108ad6e9dc9c8df58e"
+    },
+    "manager": "pip",
+    "name": "leidenalg",
+    "pip_name": "leidenalg",
+    "platform": "osx-arm64",
+    "requested": true,
+    "url": "https://files.pythonhosted.org/packages/dc/b1/73130970435246d2a0629b1e315f5d5711e3d747f449e8b90c05cd9a133a/leidenalg-0.10.1-cp38-abi3-macosx_11_0_arm64.whl",
+    "version": "0.10.1"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "3d4bcf7842be7b75c791bd0c65714b72"
+    },
+    "manager": "conda",
+    "name": "lerc",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/lerc-3.0-hc377ac9_0.conda",
+    "version": "3.0"
+  },
+  {
+    "channel": "pypi",
+    "editable": false,
+    "hash": {
+      "sha256": "b847f716fc314cf83d128fedc2c16ffdff5431a439db412465c4b0ac1762478e"
+    },
+    "manager": "pip",
+    "name": "levenshtein",
+    "pip_name": "Levenshtein",
+    "platform": "osx-arm64",
+    "requested": false,
+    "url": "https://files.pythonhosted.org/packages/14/b7/d0cb1e535e5d8d3eff3ad30eb51418aa79411a2aa3f3dac904cb03df11c1/Levenshtein-0.23.0-cp39-cp39-macosx_11_0_arm64.whl",
+    "version": "0.23.0"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "fa99e6fdd5c4db1293a1eda492552ac6"
+    },
+    "manager": "conda",
+    "name": "libaec",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/libaec-1.0.4-hc377ac9_1.conda",
+    "version": "1.0.4"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "ee4168ac04387a5ceb63d76df4e33715"
+    },
+    "manager": "conda",
+    "name": "libavif",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/libavif-0.11.1-h80987f9_0.conda",
+    "version": "0.11.1"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "9a5cb70f20eb4cc35e37a419f83ae385"
+    },
+    "manager": "conda",
+    "name": "libbrotlicommon",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/libbrotlicommon-1.0.9-h1a28f6b_7.conda",
+    "version": "1.0.9"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "131d812d64b803ad9fc1574051f37727"
+    },
+    "manager": "conda",
+    "name": "libbrotlidec",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/libbrotlidec-1.0.9-h1a28f6b_7.conda",
+    "version": "1.0.9"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "d5cf74296c52de90b3b1e5c8ebc52123"
+    },
+    "manager": "conda",
+    "name": "libbrotlienc",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/libbrotlienc-1.0.9-h1a28f6b_7.conda",
+    "version": "1.0.9"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "a9de4935b3a51312f05d97cbb553480a"
+    },
+    "manager": "conda",
+    "name": "libclang",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/libclang-14.0.6-default_h1b80db6_1.conda",
+    "version": "14.0.6"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "854a3eea0b284de748919be581028a0b"
+    },
+    "manager": "conda",
+    "name": "libclang13",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/libclang13-14.0.6-default_h24352ff_1.conda",
+    "version": "14.0.6"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "4dea46178ef974ffe10708a1b2961141"
+    },
+    "manager": "conda",
+    "name": "libcurl",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/libcurl-8.4.0-h3e2b118_0.conda",
+    "version": "8.4.0"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "7e7407793c757ee8f5b8d7c2e3b9e9ab"
+    },
+    "manager": "conda",
+    "name": "libcxx",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/libcxx-14.0.6-h848a8c0_0.conda",
+    "version": "14.0.6"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "e25fefa02a59696e3a7acb80e001dd97"
+    },
+    "manager": "conda",
+    "name": "libdeflate",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/libdeflate-1.17-h80987f9_1.conda",
+    "version": "1.17"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "5af41ecedeb62857249ba75166a7b6b1"
+    },
+    "manager": "conda",
+    "name": "libedit",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/libedit-3.1.20221030-h80987f9_0.conda",
+    "version": "3.1.20221030"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "00cac99189c361c3b2cbf506ae6cc718"
+    },
+    "manager": "conda",
+    "name": "libev",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/libev-4.33-h1a28f6b_1.conda",
+    "version": "4.33"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "0279cc7c6cb46a948c6312e490f2c04e"
+    },
+    "manager": "conda",
+    "name": "libffi",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/libffi-3.4.4-hca03da5_0.conda",
+    "version": "3.4.4"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "c5e86fc4ec38d0a560c08846544cc15c"
+    },
+    "manager": "conda",
+    "name": "libgfortran",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/libgfortran-5.0.0-11_3_0_hca03da5_28.conda",
+    "version": "5.0.0"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "731b10bb5430bc63ac2bd46ddcaa77db"
+    },
+    "manager": "conda",
+    "name": "libgfortran5",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/libgfortran5-11.3.0-h009349e_28.conda",
+    "version": "11.3.0"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "0cb77f51b777a6bf8271aea913ba1bdc"
+    },
+    "manager": "conda",
+    "name": "libiconv",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/libiconv-1.16-h1a28f6b_2.conda",
+    "version": "1.16"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "b34f3de20415528b55733de1d0d1ccf9"
+    },
+    "manager": "conda",
+    "name": "libllvm14",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/libllvm14-14.0.6-h7ec7a93_3.conda",
+    "version": "14.0.6"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "32eac5d9a166c3cbce9b6dfef765b138"
+    },
+    "manager": "conda",
+    "name": "libnghttp2",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/libnghttp2-1.57.0-h62f6fdd_0.conda",
+    "version": "1.57.0"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "f32214c5943b5dec9cd3022edfdd9185"
+    },
+    "manager": "conda",
+    "name": "libopenblas",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/libopenblas-0.3.21-h269037a_0.conda",
+    "version": "0.3.21"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "35219bc0756d7dacad232c483d1518e7"
+    },
+    "manager": "conda",
+    "name": "libpng",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/libpng-1.6.39-h80987f9_0.conda",
+    "version": "1.6.39"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "4644f32bf964fcb2321c3b1e0a21da48"
+    },
+    "manager": "conda",
+    "name": "libpq",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/libpq-12.15-h02f6b3c_1.conda",
+    "version": "12.15"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "c3872d57624b5db1397b5381fa26743b"
+    },
+    "manager": "conda",
+    "name": "libsodium",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/libsodium-1.0.18-h1a28f6b_0.conda",
+    "version": "1.0.18"
+  },
+  {
+    "channel": "conda-forge",
+    "hash": {
+      "md5": "1d8208ba1b6a8c61431e77dc4e5c8fb9"
+    },
+    "manager": "conda",
+    "name": "libsqlite",
+    "platform": "osx-arm64",
+    "url": "https://conda.anaconda.org/conda-forge/osx-arm64/libsqlite-3.43.2-h091b4b1_0.conda",
+    "version": "3.43.2"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "756b80ed52aba67c1a44f079a6abc52d"
+    },
+    "manager": "conda",
+    "name": "libssh2",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/libssh2-1.10.0-h02f6b3c_2.conda",
+    "version": "1.10.0"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "025785c9c7c5369c486e717ad687f8d9"
+    },
+    "manager": "conda",
+    "name": "libtiff",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/libtiff-4.5.1-h313beb8_0.conda",
+    "version": "4.5.1"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "018bbaddcec6d9a75bd6e33d193a1af3"
+    },
+    "manager": "conda",
+    "name": "libwebp",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/libwebp-1.3.2-ha3663a8_0.conda",
+    "version": "1.3.2"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "1f586db6b9bf717c99210c183e3cd57b"
+    },
+    "manager": "conda",
+    "name": "libwebp-base",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/libwebp-base-1.3.2-h80987f9_0.conda",
+    "version": "1.3.2"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "4934d3c232f4180c0f23b81ca7f03beb"
+    },
+    "manager": "conda",
+    "name": "libxml2",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/libxml2-2.10.4-h372ba2a_0.conda",
+    "version": "2.10.4"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "4c6dbd29e21ea05693a2c28bfe841db8"
+    },
+    "manager": "conda",
+    "name": "libxslt",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/libxslt-1.1.37-habca612_0.conda",
+    "version": "1.1.37"
+  },
+  {
+    "channel": "conda-forge",
+    "hash": {
+      "md5": "1a47f5236db2e06a320ffa0392f81bd8"
+    },
+    "manager": "conda",
+    "name": "libzlib",
+    "platform": "osx-arm64",
+    "url": "https://conda.anaconda.org/conda-forge/osx-arm64/libzlib-1.2.13-h53f4e23_5.conda",
+    "version": "1.2.13"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "309de818ce72f2e6cbe7adfd4b693b2b"
+    },
+    "manager": "conda",
+    "name": "libzopfli",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/libzopfli-1.0.3-hc377ac9_0.conda",
+    "version": "1.0.3"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "39911482ecabf2bea74b2eadae7c4f85"
+    },
+    "manager": "conda",
+    "name": "linkify-it-py",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/linkify-it-py-2.0.0-py39hca03da5_0.conda",
+    "version": "2.0.0"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "a2b4668f6d54435752cbef2a27ed10d1"
+    },
+    "manager": "conda",
+    "name": "llvm-openmp",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/llvm-openmp-14.0.6-hc6e5704_0.conda",
+    "version": "14.0.6"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "c619d1cd2f2b09624e1789fb377b9e50"
+    },
+    "manager": "conda",
+    "name": "llvmlite",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/llvmlite-0.41.0-py39h514c7bf_0.conda",
+    "version": "0.41.0"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "5383ac27ed119390843955aaf2e0a507"
+    },
+    "manager": "conda",
+    "name": "locket",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/locket-1.0.0-py39hca03da5_0.conda",
+    "version": "1.0.0"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "8d5695605258f74903891d999879d7e9"
+    },
+    "manager": "conda",
+    "name": "lxml",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/lxml-4.9.3-py39h50ffb84_0.conda",
+    "version": "4.9.3"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "12d867cba3e895c0b2a18f86970c6663"
+    },
+    "manager": "conda",
+    "name": "lz4-c",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/lz4-c-1.9.4-h313beb8_0.conda",
+    "version": "1.9.4"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "1b56e745eb286bcf20efe41383b47c47"
+    },
+    "manager": "conda",
+    "name": "markdown",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/markdown-3.4.1-py39hca03da5_0.conda",
+    "version": "3.4.1"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "15261f91c82d5e19eac49203df4cd6e5"
+    },
+    "manager": "conda",
+    "name": "markdown-it-py",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/markdown-it-py-2.2.0-py39hca03da5_1.conda",
+    "version": "2.2.0"
+  },
+  {
+    "channel": "pypi",
+    "editable": false,
+    "hash": {
+      "sha256": "75a1fd0c05552e3bf0804ec4879346a7691b4453d43e48079079378bee21887c"
+    },
+    "manager": "pip",
+    "name": "markov-clustering",
+    "pip_name": "markov-clustering",
+    "platform": "osx-arm64",
+    "requested": false,
+    "url": "https://files.pythonhosted.org/packages/76/42/19e11a42fa952d35116b90577e2cde31c541ce78364a52167f852864ba29/markov_clustering-0.0.6.dev0-py3-none-any.whl",
+    "version": "0.0.6.dev0"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "48b266b2faa047309cd8f901995e5679"
+    },
+    "manager": "conda",
+    "name": "markupsafe",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/markupsafe-2.1.1-py39h1a28f6b_0.conda",
+    "version": "2.1.1"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "bc63df0d1dbd26b6e40cda10c8969343"
+    },
+    "manager": "conda",
+    "name": "matplotlib",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/matplotlib-3.7.2-py39hca03da5_0.conda",
+    "version": "3.7.2"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "725be24d691d69ee260fdd96b5515e9c"
+    },
+    "manager": "conda",
+    "name": "matplotlib-base",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/matplotlib-base-3.7.2-py39h46d7db6_0.conda",
+    "version": "3.7.2"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "6c07059dfcf2702f5fa711aa046904a3"
+    },
+    "manager": "conda",
+    "name": "matplotlib-inline",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/matplotlib-inline-0.1.6-py39hca03da5_0.conda",
+    "version": "0.1.6"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "fc63a10d860c91a9f35a444e4eaee65e"
+    },
+    "manager": "conda",
+    "name": "mdit-py-plugins",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/mdit-py-plugins-0.3.0-py39hca03da5_0.conda",
+    "version": "0.3.0"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "c0552a698e96a0dddb158d950b77cb7d"
+    },
+    "manager": "conda",
+    "name": "mdurl",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/mdurl-0.1.0-py39hca03da5_0.conda",
+    "version": "0.1.0"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "dc0e33c3992f5c68bc7c90b42f055a8e"
+    },
+    "manager": "conda",
+    "name": "mistune",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/mistune-0.8.4-py39h1a28f6b_1000.conda",
+    "version": "0.8.4"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "85ccd9d5f1b0ec70509c6bf7ef5e1716"
+    },
+    "manager": "conda",
+    "name": "multipledispatch",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/multipledispatch-0.6.0-py39hca03da5_0.conda",
+    "version": "0.6.0"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "148362ba07f92abab76999a680c80084"
+    },
+    "manager": "conda",
+    "name": "munkres",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/noarch/munkres-1.1.4-py_0.conda",
+    "version": "1.1.4"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "cb6f7d449736afb130f9c7f404759032"
+    },
+    "manager": "conda",
+    "name": "mysql",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/mysql-5.7.24-ha71a6ea_2.conda",
+    "version": "5.7.24"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "d68fcb3d02607dd08d0b0b1c5dfc20fa"
+    },
+    "manager": "conda",
+    "name": "nb_conda_kernels",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/nb_conda_kernels-2.3.1-py39hca03da5_0.conda",
+    "version": "2.3.1"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "14e02ee3d92700c3f1fa9c812ab20ab1"
+    },
+    "manager": "conda",
+    "name": "nbclassic",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/nbclassic-0.5.5-py39hca03da5_0.conda",
+    "version": "0.5.5"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "63b7de80bdeb1838e2a2bdf5505b5f46"
+    },
+    "manager": "conda",
+    "name": "nbclient",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/nbclient-0.5.13-py39hca03da5_0.conda",
+    "version": "0.5.13"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "f9e800b688f4d710d5da8bfee701dc97"
+    },
+    "manager": "conda",
+    "name": "nbconvert",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/nbconvert-6.5.4-py39hca03da5_0.conda",
+    "version": "6.5.4"
+  },
+  {
+    "channel": "pypi",
+    "editable": false,
+    "hash": {
+      "sha256": "a99fed2399fd939e2e577db4bb6e957aac860af4cf583044b723cc9a448c644e"
+    },
+    "manager": "pip",
+    "name": "nbdime",
+    "pip_name": "nbdime",
+    "platform": "osx-arm64",
+    "requested": true,
+    "url": "https://files.pythonhosted.org/packages/d7/b3/4a3eb72367702835900eb5a9ea43c46748ad789611ad28c1478e7625b8ef/nbdime-3.2.1-py2.py3-none-any.whl",
+    "version": "3.2.1"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "62f141ab48473e66449a9b9b1a5bab8a"
+    },
+    "manager": "conda",
+    "name": "nbformat",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/nbformat-5.9.2-py39hca03da5_0.conda",
+    "version": "5.9.2"
+  },
+  {
+    "channel": "pypi",
+    "editable": false,
+    "hash": {
+      "sha256": "427e42caabeae39f493d8baca629b03816269fc11f1b7e2046e10929a3149a73"
+    },
+    "manager": "pip",
+    "name": "nbval",
+    "pip_name": "nbval",
+    "platform": "osx-arm64",
+    "requested": true,
+    "url": "https://files.pythonhosted.org/packages/16/9c/1da45f3bf4065cb6bace83cca6c66ff82cc11a641b423e6ac3fcd9b6aa67/nbval-0.10.0-py2.py3-none-any.whl",
+    "version": "0.10.0"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "08038fd388dbbda4ed8e0206fc8706a7"
+    },
+    "manager": "conda",
+    "name": "ncurses",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/ncurses-6.4-h313beb8_0.conda",
+    "version": "6.4"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "6dee44079d6775ceba33042609f9a8c0"
+    },
+    "manager": "conda",
+    "name": "nest-asyncio",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/nest-asyncio-1.5.6-py39hca03da5_0.conda",
+    "version": "1.5.6"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "d94376d03aad678d6e495e3376039849"
+    },
+    "manager": "conda",
+    "name": "networkx",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/networkx-3.1-py39hca03da5_0.conda",
+    "version": "3.1"
+  },
+  {
+    "channel": "pypi",
+    "editable": false,
+    "hash": {
+      "sha256": "6fd9bdea89e3df0d2116507084adf3b51b353a65a8d945db659df3a509767678"
+    },
+    "manager": "pip",
+    "name": "nf1",
+    "pip_name": "nf1",
+    "platform": "osx-arm64",
+    "requested": false,
+    "url": "https://files.pythonhosted.org/packages/65/c2/2ae3034b0719d7f3a6faea2d99157b930c11647ab9d000bda58a563d89c8/nf1-0.0.4-py3-none-any.whl",
+    "version": "0.0.4"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "c109b8a610662e6b9b168cabeb2be29e"
+    },
+    "manager": "conda",
+    "name": "notebook",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/notebook-6.5.4-py39hca03da5_1.conda",
+    "version": "6.5.4"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "4856fb6870d5369ee4db3bd519bfa9ac"
+    },
+    "manager": "conda",
+    "name": "notebook-shim",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/notebook-shim-0.2.2-py39hca03da5_0.conda",
+    "version": "0.2.2"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "a29ad1688b52c0be1a21b2eb3f7b38a3"
+    },
+    "manager": "conda",
+    "name": "numba",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/numba-0.58.0-py39h46d7db6_0.conda",
+    "version": "0.58.0"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "d4d927becbec1e8711995d021f2bad8d"
+    },
+    "manager": "conda",
+    "name": "numexpr",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/numexpr-2.8.7-py39hecc3335_0.conda",
+    "version": "2.8.7"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "02de3040cef069856a5001a03a517d23"
+    },
+    "manager": "conda",
+    "name": "numpy",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/numpy-1.25.2-py39h3b2db8e_0.conda",
+    "version": "1.25.2"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "678c746d110db0462376fe772850a468"
+    },
+    "manager": "conda",
+    "name": "numpy-base",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/numpy-base-1.25.2-py39ha9811e2_0.conda",
+    "version": "1.25.2"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "70880715060082e7f91dad95173fe9f6"
+    },
+    "manager": "conda",
+    "name": "openjpeg",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/openjpeg-2.3.0-h7a6adac_2.conda",
+    "version": "2.3.0"
+  },
+  {
+    "channel": "conda-forge",
+    "hash": {
+      "md5": "5a89552fececf4cd99628318ccbb67a3"
+    },
+    "manager": "conda",
+    "name": "openssl",
+    "platform": "osx-arm64",
+    "url": "https://conda.anaconda.org/conda-forge/osx-arm64/openssl-3.1.4-h0d3ecfb_0.conda",
+    "version": "3.1.4"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "e12c27ac3ce5f4d8174486be7bd3bbce"
+    },
+    "manager": "conda",
+    "name": "packaging",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/packaging-23.1-py39hca03da5_0.conda",
+    "version": "23.1"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "7813ed5cd00a4f7bb267e1af7a3be774"
+    },
+    "manager": "conda",
+    "name": "pandas",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/pandas-2.1.1-py39h46d7db6_0.conda",
+    "version": "2.1.1"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "5547ced9e3bb4c513405998957b52c7b"
+    },
+    "manager": "conda",
+    "name": "pandocfilters",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/noarch/pandocfilters-1.5.0-pyhd3eb1b0_0.conda",
+    "version": "1.5.0"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "941da3f49f241f366e422a275e9e8702"
+    },
+    "manager": "conda",
+    "name": "panel",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/panel-1.2.3-py39hca03da5_0.conda",
+    "version": "1.2.3"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "22db206943be08f7678bcef19e0441e5"
+    },
+    "manager": "conda",
+    "name": "param",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/param-1.13.0-py39hca03da5_0.conda",
+    "version": "1.13.0"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "c6f0f6219bf5ce2b510ef4b75cbc3e01"
+    },
+    "manager": "conda",
+    "name": "parso",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/noarch/parso-0.8.3-pyhd3eb1b0_0.conda",
+    "version": "0.8.3"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "2274442198b291534326868c3f3d06eb"
+    },
+    "manager": "conda",
+    "name": "partd",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/partd-1.4.0-py39hca03da5_0.conda",
+    "version": "1.4.0"
+  },
+  {
+    "channel": "pypi",
+    "editable": false,
+    "hash": {
+      "sha256": "d7e2a7dd0689b344062c5c661a413721153f377e8e1f01b09448d4a1c4e88590"
+    },
+    "manager": "pip",
+    "name": "partition-igraph",
+    "pip_name": "partition-igraph",
+    "platform": "osx-arm64",
+    "requested": true,
+    "url": "https://files.pythonhosted.org/packages/87/de/4cb6e199401301596b561ca089778a6814c7d9af0705c8bf1f6db232aa67/partition_igraph-0.0.7-py3-none-any.whl",
+    "version": "0.0.7"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "591965670ef0674df46f78641a5fb132"
+    },
+    "manager": "conda",
+    "name": "pathlib",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/noarch/pathlib-1.0.1-pyhd3eb1b0_1.conda",
+    "version": "1.0.1"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "31668a162a176c27ed2b89a9fac761d7"
+    },
+    "manager": "conda",
+    "name": "pcre",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/pcre-8.45-hc377ac9_0.conda",
+    "version": "8.45"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "28012e01a1eb7eac6c538525473e3f18"
+    },
+    "manager": "conda",
+    "name": "pcre2",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/pcre2-10.42-hb066dcc_0.conda",
+    "version": "10.42"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "a5fcc406304ceaf81e51dc9b1516989a"
+    },
+    "manager": "conda",
+    "name": "perl",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/perl-5.34.0-h1a28f6b_2.conda",
+    "version": "5.34.0"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "765b2562d6cdd14bb6d44fc170a04331"
+    },
+    "manager": "conda",
+    "name": "pexpect",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/noarch/pexpect-4.8.0-pyhd3eb1b0_3.conda",
+    "version": "4.8.0"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "4a6363fd8dda664b95f99f7c5aa95abc"
+    },
+    "manager": "conda",
+    "name": "pickleshare",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/noarch/pickleshare-0.7.5-pyhd3eb1b0_1003.conda",
+    "version": "0.7.5"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "aea56d6f833c74ab37179596e98eb2e8"
+    },
+    "manager": "conda",
+    "name": "pillow",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/pillow-10.0.1-py39h3b245a6_0.conda",
+    "version": "10.0.1"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "4a626b214b1819e1d5bb093338fdbfed"
+    },
+    "manager": "conda",
+    "name": "pip",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/pip-23.3-py39hca03da5_0.conda",
+    "version": "23.3"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "d668dc2c6f6203b5d201e72903588034"
+    },
+    "manager": "conda",
+    "name": "pixman",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/pixman-0.40.0-h1a28f6b_0.conda",
+    "version": "0.40.0"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "85d278e6ad2de378f4dd735600985ef4"
+    },
+    "manager": "conda",
+    "name": "platformdirs",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/platformdirs-3.10.0-py39hca03da5_0.conda",
+    "version": "3.10.0"
+  },
+  {
+    "channel": "pypi",
+    "editable": false,
+    "hash": {
+      "sha256": "d89c696a773f8bd377d18e5ecda92b7a3793cbe66c87060a6fb58c7b6e1061f7"
+    },
+    "manager": "pip",
+    "name": "pluggy",
+    "pip_name": "pluggy",
+    "platform": "osx-arm64",
+    "requested": false,
+    "url": "https://files.pythonhosted.org/packages/05/b8/42ed91898d4784546c5f06c60506400548db3f7a4b3fb441cba4e5c17952/pluggy-1.3.0-py3-none-any.whl",
+    "version": "1.3.0"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "2c1f96064fc0774b1876b8eb0108fa2f"
+    },
+    "manager": "conda",
+    "name": "ply",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/ply-3.11-py39hca03da5_0.conda",
+    "version": "3.11"
+  },
+  {
+    "channel": "pypi",
+    "editable": false,
+    "hash": {
+      "sha256": "1bfba436d9e2ad5199ccad3583cca8c241b8736b5bb23fe67c213d52650dbb66"
+    },
+    "manager": "pip",
+    "name": "pooch",
+    "pip_name": "pooch",
+    "platform": "osx-arm64",
+    "requested": false,
+    "url": "https://files.pythonhosted.org/packages/1a/a5/5174dac3957ac412e80a00f30b6507031fcab7000afc9ea0ac413bddcff2/pooch-1.8.0-py3-none-any.whl",
+    "version": "1.8.0"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "dff5fd57569fd7d7670e045b52d6ea6b"
+    },
+    "manager": "conda",
+    "name": "prometheus_client",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/prometheus_client-0.14.1-py39hca03da5_0.conda",
+    "version": "0.14.1"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "a7bb3eb8b82dc7d83cf5e32e6e23a659"
+    },
+    "manager": "conda",
+    "name": "prompt-toolkit",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/prompt-toolkit-3.0.36-py39hca03da5_0.conda",
+    "version": "3.0.36"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "c850976b29e0171af80d2b3725af1c36"
+    },
+    "manager": "conda",
+    "name": "prompt_toolkit",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/noarch/prompt_toolkit-3.0.36-hd3eb1b0_0.conda",
+    "version": "3.0.36"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "e3d73204a364057735127a6a67a8d21a"
+    },
+    "manager": "conda",
+    "name": "psutil",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/psutil-5.9.0-py39h1a28f6b_0.conda",
+    "version": "5.9.0"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "7441d2827d4bfbcc1fa308875a146246"
+    },
+    "manager": "conda",
+    "name": "ptyprocess",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/noarch/ptyprocess-0.7.0-pyhd3eb1b0_2.conda",
+    "version": "0.7.0"
+  },
+  {
+    "channel": "pypi",
+    "editable": false,
+    "hash": {
+      "sha256": "b6de42c929e80325bf44cc7a2997f02535440800c376b9eb8cb7b4670ed53769"
+    },
+    "manager": "pip",
+    "name": "pulp",
+    "pip_name": "PuLP",
+    "platform": "osx-arm64",
+    "requested": false,
+    "url": "https://files.pythonhosted.org/packages/a6/60/b91acaa7995bfcd72f1739ea2b0f5cda707329e17f0b7f921fd8acc79889/PuLP-2.7.0-py3-none-any.whl",
+    "version": "2.7.0"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "a87d6d9827e5dff68d34d69971f8a9b1"
+    },
+    "manager": "conda",
+    "name": "pure_eval",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/noarch/pure_eval-0.2.2-pyhd3eb1b0_0.conda",
+    "version": "0.2.2"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "262247c7e23d528fc010c30225003e15"
+    },
+    "manager": "conda",
+    "name": "pycairo",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/pycairo-1.23.0-py39hc7d53f0_0.conda",
+    "version": "1.23.0"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "135a72ff2a31150a3a3ff0b1edd41ca9"
+    },
+    "manager": "conda",
+    "name": "pycparser",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/noarch/pycparser-2.21-pyhd3eb1b0_0.conda",
+    "version": "2.21"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "65aa044e4c558b14e0be817a1dc02afb"
+    },
+    "manager": "conda",
+    "name": "pyct",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/pyct-0.5.0-py39hca03da5_0.conda",
+    "version": "0.5.0"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "6dbd300dc565f08e1a57025eb75fa6a4"
+    },
+    "manager": "conda",
+    "name": "pygments",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/pygments-2.15.1-py39hca03da5_1.conda",
+    "version": "2.15.1"
+  },
+  {
+    "channel": "conda-forge",
+    "hash": {
+      "md5": "69de534d7ed82365525f398be03ca647"
+    },
+    "manager": "conda",
+    "name": "pynndescent",
+    "platform": "osx-arm64",
+    "url": "https://conda.anaconda.org/conda-forge/noarch/pynndescent-0.5.10-pyh1a96a4e_0.conda",
+    "version": "0.5.10"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "dfc5182325629c40db17aa09abc48e52"
+    },
+    "manager": "conda",
+    "name": "pyopenssl",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/pyopenssl-23.2.0-py39hca03da5_0.conda",
+    "version": "23.2.0"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "beecc65c76734639368ecf6c1936973e"
+    },
+    "manager": "conda",
+    "name": "pyparsing",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/pyparsing-3.0.9-py39hca03da5_0.conda",
+    "version": "3.0.9"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "50f0870fc5dd8f7dcce460e3bd09476f"
+    },
+    "manager": "conda",
+    "name": "pyqt",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/pyqt-5.15.7-py39hc377ac9_0.conda",
+    "version": "5.15.7"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "15478a9586b03841c561def590962b8d"
+    },
+    "manager": "conda",
+    "name": "pyqt5-sip",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/pyqt5-sip-12.11.0-py39hc377ac9_0.conda",
+    "version": "12.11.0"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "a8982150f29ef854b7b259c822feb194"
+    },
+    "manager": "conda",
+    "name": "pyrsistent",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/pyrsistent-0.18.0-py39h1a28f6b_0.conda",
+    "version": "0.18.0"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "addb506078441bb83a273b5730820f8d"
+    },
+    "manager": "conda",
+    "name": "pysocks",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/pysocks-1.7.1-py39hca03da5_0.conda",
+    "version": "1.7.1"
+  },
+  {
+    "channel": "pypi",
+    "editable": false,
+    "hash": {
+      "sha256": "0d009c083ea859a71b76adf7c1d502e4bc170b80a8ef002da5806527b9591fac"
+    },
+    "manager": "pip",
+    "name": "pytest",
+    "pip_name": "pytest",
+    "platform": "osx-arm64",
+    "requested": false,
+    "url": "https://files.pythonhosted.org/packages/f3/8c/f16efd81ca8e293b2cc78f111190a79ee539d0d5d36ccd49975cb3beac60/pytest-7.4.3-py3-none-any.whl",
+    "version": "7.4.3"
+  },
+  {
+    "channel": "conda-forge",
+    "hash": {
+      "md5": "7672472bbab6419a1211403e7c041116"
+    },
+    "manager": "conda",
+    "name": "python",
+    "platform": "osx-arm64",
+    "url": "https://conda.anaconda.org/conda-forge/osx-arm64/python-3.9.18-hfa1ae8a_0_cpython.conda",
+    "version": "3.9.18"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "211ee00320b08a1ac9fea6677649f6c9"
+    },
+    "manager": "conda",
+    "name": "python-dateutil",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/noarch/python-dateutil-2.8.2-pyhd3eb1b0_0.conda",
+    "version": "2.8.2"
+  },
+  {
+    "channel": "pypi",
+    "editable": false,
+    "hash": {
+      "sha256": "f5971a9226b701070a4bf2c38c89e5a3f0d64de8debda981d1db98583009122a"
+    },
+    "manager": "pip",
+    "name": "python-dotenv",
+    "pip_name": "python-dotenv",
+    "platform": "osx-arm64",
+    "requested": true,
+    "url": "https://files.pythonhosted.org/packages/44/2f/62ea1c8b593f4e093cc1a7768f0d46112107e790c3e478532329e434f00b/python_dotenv-1.0.0-py3-none-any.whl",
+    "version": "1.0.0"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "1b5db824f3503cf6fd6db6c8af7b752b"
+    },
+    "manager": "conda",
+    "name": "python-fastjsonschema",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/python-fastjsonschema-2.16.2-py39hca03da5_0.conda",
+    "version": "2.16.2"
+  },
+  {
+    "channel": "pypi",
+    "editable": false,
+    "hash": {
+      "sha256": "38243d79a3fdcb04c58bcf1337c18f6fe6310d9783cecc6bd74a0fdc3ddd3924"
+    },
+    "manager": "pip",
+    "name": "python-igraph",
+    "pip_name": "python-igraph",
+    "platform": "osx-arm64",
+    "requested": false,
+    "url": "https://files.pythonhosted.org/packages/5d/f4/d7d8b02c6d40b9fe71fd7d57b9178cc9527c3bbdd252a6df3cc9fa83a3c8/python_igraph-0.10.8-py3-none-any.whl",
+    "version": "0.10.8"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "03a77d48b62c371280ab0298291d1b7a"
+    },
+    "manager": "conda",
+    "name": "python-json-logger",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/python-json-logger-2.0.7-py39hca03da5_0.conda",
+    "version": "2.0.7"
+  },
+  {
+    "channel": "pypi",
+    "editable": false,
+    "hash": {
+      "sha256": "486a47b189e3955463107aa36b57fb1e2b3b40243b9cc2994cde9810c78195c0"
+    },
+    "manager": "pip",
+    "name": "python-levenshtein",
+    "pip_name": "python-Levenshtein",
+    "platform": "osx-arm64",
+    "requested": false,
+    "url": "https://files.pythonhosted.org/packages/27/89/c45dbdbd479453cfc8c4c1271c9f67fd607deaf84880e31c67b682980456/python_Levenshtein-0.23.0-py3-none-any.whl",
+    "version": "0.23.0"
+  },
+  {
+    "channel": "pypi",
+    "editable": false,
+    "hash": {
+      "sha256": "b7ba2df5002fd28d3ee789a49532baad11fe648e4f2117cf0798e7520a1da56b"
+    },
+    "manager": "pip",
+    "name": "python-louvain",
+    "pip_name": "python-louvain",
+    "platform": "osx-arm64",
+    "requested": false,
+    "url": "https://files.pythonhosted.org/packages/7c/0d/8787b021d52eb8764c0bb18ab95f720cf554902044c6a5cb1865daf45763/python-louvain-0.16.tar.gz",
+    "version": "0.16"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "479c037de0186d114b9911158427624e"
+    },
+    "manager": "conda",
+    "name": "python-tzdata",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/noarch/python-tzdata-2023.3-pyhd3eb1b0_0.conda",
+    "version": "2023.3"
+  },
+  {
+    "channel": "conda-forge",
+    "hash": {
+      "md5": "be9e11a37bbab9cfdbcb36e52d8d73cb"
+    },
+    "manager": "conda",
+    "name": "python_abi",
+    "platform": "osx-arm64",
+    "url": "https://conda.anaconda.org/conda-forge/osx-arm64/python_abi-3.9-4_cp39.conda",
+    "version": "3.9"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "3e66830fc83de628c25c56a57c12f3ac"
+    },
+    "manager": "conda",
+    "name": "pytz",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/pytz-2023.3.post1-py39hca03da5_0.conda",
+    "version": "2023.3.post1"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "04d5dd26b67ab97a1add45b534a4f477"
+    },
+    "manager": "conda",
+    "name": "pyviz_comms",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/pyviz_comms-2.3.0-py39hca03da5_0.conda",
+    "version": "2.3.0"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "cf4072306678ada4bb26564c497280ee"
+    },
+    "manager": "conda",
+    "name": "pywavelets",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/pywavelets-1.4.1-py39h80987f9_0.conda",
+    "version": "1.4.1"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "5c3131e8a142cea1e833304232045e37"
+    },
+    "manager": "conda",
+    "name": "pyyaml",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/pyyaml-6.0.1-py39h80987f9_0.conda",
+    "version": "6.0.1"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "43e6500fedfb7e27570c9ee6f61898ad"
+    },
+    "manager": "conda",
+    "name": "pyzmq",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/pyzmq-23.2.0-py39hc377ac9_0.conda",
+    "version": "23.2.0"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "bdb7c5104ffda061cbcdd58e8ac74d6a"
+    },
+    "manager": "conda",
+    "name": "qt-main",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/qt-main-5.15.2-h9b4df51_9.conda",
+    "version": "5.15.2"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "23327053a2026489161cd3921aef0312"
+    },
+    "manager": "conda",
+    "name": "qt-webengine",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/qt-webengine-5.15.9-h2903aaf_7.conda",
+    "version": "5.15.9"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "cfcf57f774234a9ec0f410696b9e76ac"
+    },
+    "manager": "conda",
+    "name": "qtconsole",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/qtconsole-5.4.2-py39hca03da5_0.conda",
+    "version": "5.4.2"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "6a95db10647ab2da8a844180f0956be6"
+    },
+    "manager": "conda",
+    "name": "qtpy",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/qtpy-2.2.0-py39hca03da5_0.conda",
+    "version": "2.2.0"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "95a5bb6e770db6f63a79852a1bc21e6c"
+    },
+    "manager": "conda",
+    "name": "qtwebkit",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/qtwebkit-5.212-h19f419d_5.conda",
+    "version": "5.212"
+  },
+  {
+    "channel": "pypi",
+    "editable": false,
+    "hash": {
+      "sha256": "c006aa481d1b91c2600920ce16e42d208a4b6f318d393aef4dd2172d568f2641"
+    },
+    "manager": "pip",
+    "name": "rapidfuzz",
+    "pip_name": "rapidfuzz",
+    "platform": "osx-arm64",
+    "requested": false,
+    "url": "https://files.pythonhosted.org/packages/87/cf/0b89f2be75f68c6581befd2e729f2a2025dc2d34418c84c875de25c29101/rapidfuzz-3.4.0-cp39-cp39-macosx_11_0_arm64.whl",
+    "version": "3.4.0"
+  },
+  {
+    "channel": "conda-forge",
+    "hash": {
+      "md5": "fb1e0d187cae9dc293875e815f0fc9e1"
+    },
+    "manager": "conda",
+    "name": "rarfile",
+    "platform": "osx-arm64",
+    "url": "https://conda.anaconda.org/conda-forge/noarch/rarfile-4.0-pyh9f0ad1d_0.tar.bz2",
+    "version": "4.0"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "8e3d8eb62e32065d41fad9a83a901254"
+    },
+    "manager": "conda",
+    "name": "readline",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/readline-8.2-h1a28f6b_0.conda",
+    "version": "8.2"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "303339adb79e19dc174da094fbc7f457"
+    },
+    "manager": "conda",
+    "name": "requests",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/requests-2.31.0-py39hca03da5_0.conda",
+    "version": "2.31.0"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "6d2d3e1529afed8c08041f7f505e2822"
+    },
+    "manager": "conda",
+    "name": "rfc3339-validator",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/rfc3339-validator-0.1.4-py39hca03da5_0.conda",
+    "version": "0.1.4"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "35436be59ac9ee6b15bf652f1963453b"
+    },
+    "manager": "conda",
+    "name": "rfc3986-validator",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/rfc3986-validator-0.1.1-py39hca03da5_0.conda",
+    "version": "0.1.1"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "e0b378e179ad83aa3a516e5207c06d37"
+    },
+    "manager": "conda",
+    "name": "scikit-image",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/scikit-image-0.19.3-py39h313beb8_1.conda",
+    "version": "0.19.3"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "84dff30b439ea831090a5213b6b8a965"
+    },
+    "manager": "conda",
+    "name": "scikit-learn",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/scikit-learn-1.3.0-py39h46d7db6_0.conda",
+    "version": "1.3.0"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "99e10914fa51c9e695b99c2ec47f99b9"
+    },
+    "manager": "conda",
+    "name": "scipy",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/scipy-1.11.3-py39h20cbe94_0.conda",
+    "version": "1.11.3"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "57a45ca958f688860674bc64b97a3d29"
+    },
+    "manager": "conda",
+    "name": "seaborn",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/seaborn-0.12.2-py39hca03da5_0.conda",
+    "version": "0.12.2"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "bfa3c5c61a5a91e528a1d2d1e3cae6c9"
+    },
+    "manager": "conda",
+    "name": "send2trash",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/noarch/send2trash-1.8.0-pyhd3eb1b0_1.conda",
+    "version": "1.8.0"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "378ae9ac35aa83a4a63c970be0a03b58"
+    },
+    "manager": "conda",
+    "name": "setuptools",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/setuptools-68.0.0-py39hca03da5_0.conda",
+    "version": "68.0.0"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "4798eeccf192cd445fd92568285a1b23"
+    },
+    "manager": "conda",
+    "name": "sip",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/sip-6.6.2-py39hc377ac9_0.conda",
+    "version": "6.6.2"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "34586824d411d36af2fa40e799c172d0"
+    },
+    "manager": "conda",
+    "name": "six",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/noarch/six-1.16.0-pyhd3eb1b0_1.conda",
+    "version": "1.16.0"
+  },
+  {
+    "channel": "pypi",
+    "editable": false,
+    "hash": {
+      "sha256": "e6d8668fa5f93e706934a62d7b4db19c8d9eb8cf2adbb75ef1b675aa332b69da"
+    },
+    "manager": "pip",
+    "name": "smmap",
+    "pip_name": "smmap",
+    "platform": "osx-arm64",
+    "requested": false,
+    "url": "https://files.pythonhosted.org/packages/a7/a5/10f97f73544edcdef54409f1d839f6049a0d79df68adbc1ceb24d1aaca42/smmap-5.0.1-py3-none-any.whl",
+    "version": "5.0.1"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "dc7538e238acee1d13e8df9d57e2a4c8"
+    },
+    "manager": "conda",
+    "name": "snappy",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/snappy-1.1.9-hc377ac9_0.conda",
+    "version": "1.1.9"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "9604b8edae5165e6d587e513d988ba90"
+    },
+    "manager": "conda",
+    "name": "sniffio",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/sniffio-1.2.0-py39hca03da5_1.conda",
+    "version": "1.2.0"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "c8c10f2cd854c0a27630760958bba60c"
+    },
+    "manager": "conda",
+    "name": "snowballstemmer",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/noarch/snowballstemmer-2.2.0-pyhd3eb1b0_0.conda",
+    "version": "2.2.0"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "0b4bb7eafd0b4581b6b45b4028f337de"
+    },
+    "manager": "conda",
+    "name": "soupsieve",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/soupsieve-2.5-py39hca03da5_0.conda",
+    "version": "2.5"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "f4617251f15ad99a579bb51897848251"
+    },
+    "manager": "conda",
+    "name": "sphinx",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/sphinx-5.0.2-py39hca03da5_0.conda",
+    "version": "5.0.2"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "ac923499f97b9a9ab7c672b27cb2a1a8"
+    },
+    "manager": "conda",
+    "name": "sphinxcontrib-applehelp",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/noarch/sphinxcontrib-applehelp-1.0.2-pyhd3eb1b0_0.tar.bz2",
+    "version": "1.0.2"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "bc39c2b70430734b5879d6b504e3311f"
+    },
+    "manager": "conda",
+    "name": "sphinxcontrib-devhelp",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/noarch/sphinxcontrib-devhelp-1.0.2-pyhd3eb1b0_0.tar.bz2",
+    "version": "1.0.2"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "2af558ca8b56151110c7a3639a1ea348"
+    },
+    "manager": "conda",
+    "name": "sphinxcontrib-htmlhelp",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/noarch/sphinxcontrib-htmlhelp-2.0.0-pyhd3eb1b0_0.conda",
+    "version": "2.0.0"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "e43f8de7d6a717935ab220a0c957771d"
+    },
+    "manager": "conda",
+    "name": "sphinxcontrib-jsmath",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/noarch/sphinxcontrib-jsmath-1.0.1-pyhd3eb1b0_0.tar.bz2",
+    "version": "1.0.1"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "08d67f73f640b4d1e5e8890a324b60e3"
+    },
+    "manager": "conda",
+    "name": "sphinxcontrib-qthelp",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/noarch/sphinxcontrib-qthelp-1.0.3-pyhd3eb1b0_0.tar.bz2",
+    "version": "1.0.3"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "0440b84dfd478f340cf14c2d7c24f6c7"
+    },
+    "manager": "conda",
+    "name": "sphinxcontrib-serializinghtml",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/noarch/sphinxcontrib-serializinghtml-1.1.5-pyhd3eb1b0_0.conda",
+    "version": "1.1.5"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "31674bcba2e09766717f0d7d1ecee30a"
+    },
+    "manager": "conda",
+    "name": "sqlite",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/sqlite-3.41.2-h80987f9_0.conda",
+    "version": "3.41.2"
+  },
+  {
+    "channel": "pypi",
+    "editable": true,
+    "hash": {
+      "sha256": null
+    },
+    "manager": "pip",
+    "name": "src",
+    "pip_name": "src",
+    "platform": "osx-arm64",
+    "requested": true,
+    "url": "local://src",
+    "version": "2.0.0"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "6212968e73726f6da42e5ffcd2bea92d"
+    },
+    "manager": "conda",
+    "name": "stack_data",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/noarch/stack_data-0.2.0-pyhd3eb1b0_0.conda",
+    "version": "0.2.0"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "d6d81a6a6ec0db1dd55056f3787b4f45"
+    },
+    "manager": "conda",
+    "name": "tbb",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/tbb-2021.8.0-h48ca7d4_0.conda",
+    "version": "2021.8.0"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "2b3458f98de2a9b5bdaf8873d70c08ae"
+    },
+    "manager": "conda",
+    "name": "terminado",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/terminado-0.17.1-py39hca03da5_0.conda",
+    "version": "0.17.1"
+  },
+  {
+    "channel": "pypi",
+    "editable": false,
+    "hash": {
+      "sha256": "72227d592c82b3d7f672731ae73e4d1f88cd8e2ef5b075a7a7f01a23a3743917"
+    },
+    "manager": "pip",
+    "name": "texttable",
+    "pip_name": "texttable",
+    "platform": "osx-arm64",
+    "requested": false,
+    "url": "https://files.pythonhosted.org/packages/24/99/4772b8e00a136f3e01236de33b0efda31ee7077203ba5967fcc76da94d65/texttable-1.7.0-py2.py3-none-any.whl",
+    "version": "1.7.0"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "bbfdbae4934150b902f97daaf287efe2"
+    },
+    "manager": "conda",
+    "name": "threadpoolctl",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/noarch/threadpoolctl-2.2.0-pyh0d69192_0.conda",
+    "version": "2.2.0"
+  },
+  {
+    "channel": "pypi",
+    "editable": false,
+    "hash": {
+      "sha256": "fdad9cd6f58b1e551b0232f3d76f662622aaaacb27397a0372ebb8f9cd629e10"
+    },
+    "manager": "pip",
+    "name": "thresholdclustering",
+    "pip_name": "thresholdclustering",
+    "platform": "osx-arm64",
+    "requested": false,
+    "url": "https://files.pythonhosted.org/packages/49/26/2b0d326e9d637c687a8f1aeeb5b7414866576a6721355bdf6532d05d4793/thresholdclustering-1.1-py3-none-any.whl",
+    "version": "1.1"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "ce2d55eb3c7244751be744ddc62bc975"
+    },
+    "manager": "conda",
+    "name": "tifffile",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/tifffile-2023.4.12-py39hca03da5_0.conda",
+    "version": "2023.4.12"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "52262d89ad5f8632c4ddf79f5700ed67"
+    },
+    "manager": "conda",
+    "name": "tinycss2",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/tinycss2-1.2.1-py39hca03da5_0.conda",
+    "version": "1.2.1"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "012a1790e696759768ea3dd5ed84fdfb"
+    },
+    "manager": "conda",
+    "name": "tk",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/tk-8.6.12-hb8d0fd4_0.conda",
+    "version": "8.6.12"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "cda05f5f6d8509529d1a2743288d197a"
+    },
+    "manager": "conda",
+    "name": "toml",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/noarch/toml-0.10.2-pyhd3eb1b0_0.conda",
+    "version": "0.10.2"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "4b0efd379c2202d56a9028e7bd37c9c9"
+    },
+    "manager": "conda",
+    "name": "tomli",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/tomli-2.0.1-py39hca03da5_0.conda",
+    "version": "2.0.1"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "b4ff98ac0be5fb2bed104e353745f93c"
+    },
+    "manager": "conda",
+    "name": "toolz",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/toolz-0.12.0-py39hca03da5_0.conda",
+    "version": "0.12.0"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "f0b07987ec473a9840b0ed7d7829b842"
+    },
+    "manager": "conda",
+    "name": "tornado",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/tornado-6.3.3-py39h80987f9_0.conda",
+    "version": "6.3.3"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "9af6a70c80e5af78ffb3a590950cbbbe"
+    },
+    "manager": "conda",
+    "name": "tqdm",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/tqdm-4.65.0-py39h86d0a89_0.conda",
+    "version": "4.65.0"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "f876f436b35cfa106b943ec5323b7787"
+    },
+    "manager": "conda",
+    "name": "traitlets",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/traitlets-5.7.1-py39hca03da5_0.conda",
+    "version": "5.7.1"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "f4d3c31b99ee76b608beb33abebeb3d5"
+    },
+    "manager": "conda",
+    "name": "typing-extensions",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/typing-extensions-4.7.1-py39hca03da5_0.conda",
+    "version": "4.7.1"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "537405a6c9441974ed67c1f9b11e626d"
+    },
+    "manager": "conda",
+    "name": "typing_extensions",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/typing_extensions-4.7.1-py39hca03da5_0.conda",
+    "version": "4.7.1"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "29db02adf8808f7c64642cead3e28acd"
+    },
+    "manager": "conda",
+    "name": "tzdata",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/noarch/tzdata-2023c-h04d1e81_0.conda",
+    "version": "2023c"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "c18d2b6a8b61ead8f6cba94d8b227882"
+    },
+    "manager": "conda",
+    "name": "uc-micro-py",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/uc-micro-py-1.0.1-py39hca03da5_0.conda",
+    "version": "1.0.1"
+  },
+  {
+    "channel": "conda-forge",
+    "hash": {
+      "md5": "3826194e4afc7d8b13c1ea161d9486cb"
+    },
+    "manager": "conda",
+    "name": "umap-learn",
+    "platform": "osx-arm64",
+    "url": "https://conda.anaconda.org/conda-forge/osx-arm64/umap-learn-0.5.4-py39h2804cbe_0.conda",
+    "version": "0.5.4"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "45f670678aa7e4284fd7da52a3815b48"
+    },
+    "manager": "conda",
+    "name": "urllib3",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/urllib3-1.26.18-py39hca03da5_0.conda",
+    "version": "1.26.18"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "ffa649340272c3f6466ba01da254c3b0"
+    },
+    "manager": "conda",
+    "name": "wcwidth",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/noarch/wcwidth-0.2.5-pyhd3eb1b0_0.conda",
+    "version": "0.2.5"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "aef5787ca782f9e7f9f22a8525ef48d7"
+    },
+    "manager": "conda",
+    "name": "webencodings",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/webencodings-0.5.1-py39hca03da5_1.conda",
+    "version": "0.5.1"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "1272d92ba58115a8d0f5d993aa2e8714"
+    },
+    "manager": "conda",
+    "name": "websocket-client",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/websocket-client-0.58.0-py39hca03da5_4.conda",
+    "version": "0.58.0"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "5bef86b08dd3467da6841e542de23dba"
+    },
+    "manager": "conda",
+    "name": "wheel",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/wheel-0.41.2-py39hca03da5_0.conda",
+    "version": "0.41.2"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "a8e1040a30168fa35f336b66ede1611b"
+    },
+    "manager": "conda",
+    "name": "widgetsnbextension",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/widgetsnbextension-4.0.5-py39hca03da5_0.conda",
+    "version": "4.0.5"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "96215a2d382c796212003f0d6ce3911d"
+    },
+    "manager": "conda",
+    "name": "xarray",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/xarray-2023.6.0-py39hca03da5_0.conda",
+    "version": "2023.6.0"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "97830b4b477a77ca4813b4400eb43aa0"
+    },
+    "manager": "conda",
+    "name": "xyzservices",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/xyzservices-2022.9.0-py39hca03da5_1.conda",
+    "version": "2022.9.0"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "4f0a282d2f583900877fdfc832c0070a"
+    },
+    "manager": "conda",
+    "name": "xz",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/xz-5.4.2-h80987f9_0.conda",
+    "version": "5.4.2"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "ec00783a52a2fbe456ebe2a893b8c76c"
+    },
+    "manager": "conda",
+    "name": "y-py",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/y-py-0.5.9-py39ha6e5c4f_0.conda",
+    "version": "0.5.9"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "23a9bda10db68f27fac5c379466c98b7"
+    },
+    "manager": "conda",
+    "name": "yaml",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/yaml-0.2.5-h1a28f6b_0.conda",
+    "version": "0.2.5"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "dfc522478a49839aef3e7bbe6361dcc1"
+    },
+    "manager": "conda",
+    "name": "ypy-websocket",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/ypy-websocket-0.8.2-py39hca03da5_0.conda",
+    "version": "0.8.2"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "a7639e00305a8b8bb62ee68bca9512de"
+    },
+    "manager": "conda",
+    "name": "zeromq",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/zeromq-4.3.4-hc377ac9_0.conda",
+    "version": "4.3.4"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "ea2afeea77c7156d8df5578d3a7d7b9b"
+    },
+    "manager": "conda",
+    "name": "zfp",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/zfp-1.0.0-h313beb8_0.conda",
+    "version": "1.0.0"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "e364d688082fae88ef42d992488b7051"
+    },
+    "manager": "conda",
+    "name": "zipp",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/zipp-3.11.0-py39hca03da5_0.conda",
+    "version": "3.11.0"
+  },
+  {
+    "channel": "conda-forge",
+    "hash": {
+      "md5": "a08383f223b10b71492d27566fafbf6c"
+    },
+    "manager": "conda",
+    "name": "zlib",
+    "platform": "osx-arm64",
+    "url": "https://conda.anaconda.org/conda-forge/osx-arm64/zlib-1.2.13-h53f4e23_5.conda",
+    "version": "1.2.13"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
+      "md5": "59f3fb046afe70ddf9ddbeabe8c83f03"
+    },
+    "manager": "conda",
+    "name": "zstd",
+    "platform": "osx-arm64",
+    "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/zstd-1.5.5-hd90d995_0.conda",
+    "version": "1.5.5"
+  },
+  {
+    "channel": "pkgs/main",
+    "hash": {
       "md5": "a8f3fabe9d6615d1485fb3ec2f299c3c"
     },
     "manager": "conda",
