@@ -1,0 +1,6 @@
+*.explicit
+*.nohash
+*.pypi
+.ops.*
+envs
+*lockfile-local-url.ini*

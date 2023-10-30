@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "src"
+version = "2.0.0"
+description = "Explore solutions to high dimensional clustering"
+authors = [
+  {name = "vpoulin"}
+]
+license = {file = "LICENSE"}
+
+[tool.setuptools]
+packages = ["src"]
